@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -15,29 +15,29 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 4%;
 
-    --primary: 262 100% 58%;
+    --primary: 0 72% 46%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 92%;
-    --secondary-foreground: 0 0% 4%;
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 0 0% 10%;
 
     --muted: 0 0% 92%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 262 100% 95%;
-    --accent-foreground: 262 100% 40%;
+    --accent: 0 60% 95%;
+    --accent-foreground: 0 72% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 88%;
     --input: 0 0% 88%;
-    --ring: 262 100% 58%;
+    --ring: 0 72% 46%;
 
     --radius: 0.75rem;
 
     --surface: 0 0% 96%;
-    --surface-alt: 260 20% 97%;
+    --surface-alt: 0 10% 97%;
     --dark: 0 0% 4%;
     --dark-foreground: 0 0% 96%;
     --loss: 0 84% 50%;
@@ -78,7 +78,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
 
   .glass-card {

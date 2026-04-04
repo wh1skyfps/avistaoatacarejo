@@ -1,5 +1,6 @@
 import { Smartphone, Monitor, Zap, TrendingUp, MessageCircle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import avistaoLogo from "@/assets/avistao-logo.jpg";
 
 const HeroSection = () => {
   return (
