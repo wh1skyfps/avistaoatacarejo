@@ -77,7 +77,7 @@ const HeroSection = () => {
                 <div className="bg-foreground/90 rounded-[2.5rem] p-3 shadow-2xl shadow-primary/20">
                   <div className="bg-gradient-to-br from-primary/20 via-background to-accent rounded-[2rem] aspect-[9/19] flex flex-col overflow-hidden">
                     <div className="bg-primary/10 px-4 py-3 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-primary/30" />
+                      <img src={avistaoLogo} alt="Avistão" className="w-8 h-8 rounded-full object-cover" />
                       <span className="text-xs font-bold text-foreground">Avistão</span>
                     </div>
                     <div className="flex-1 p-3 space-y-2">
