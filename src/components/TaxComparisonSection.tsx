@@ -1,6 +1,6 @@
 import { X, Check, TrendingDown, AlertTriangle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import dinheiroImg from "@/assets/dinheiro.jpg";
+import dinheiroImg from "@/assets/dinheiro.png";
 
 const scenarios = [
   { revenue: "R$ 20 mil", loss: "R$ 5.400", annual: "R$ 64.800" },
