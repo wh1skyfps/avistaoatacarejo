@@ -1,5 +1,6 @@
 import { Smartphone, Monitor, Zap, TrendingUp, MessageCircle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import avistaoLogo from "@/assets/avistao-logo.jpg";
 
 const HeroSection = () => {
   return (
@@ -76,7 +77,7 @@ const HeroSection = () => {
                 <div className="bg-foreground/90 rounded-[2.5rem] p-3 shadow-2xl shadow-primary/20">
                   <div className="bg-gradient-to-br from-primary/20 via-background to-accent rounded-[2rem] aspect-[9/19] flex flex-col overflow-hidden">
                     <div className="bg-primary/10 px-4 py-3 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-primary/30" />
+                      <img src={avistaoLogo} alt="Avistão" className="w-8 h-8 rounded-full object-cover" />
                       <span className="text-xs font-bold text-foreground">Avistão</span>
                     </div>
                     <div className="flex-1 p-3 space-y-2">
@@ -104,9 +105,9 @@ const HeroSection = () => {
                 <div className="bg-foreground/80 rounded-xl p-2 shadow-xl">
                   <div className="bg-background/90 rounded-lg aspect-[16/10] p-3">
                     <div className="flex gap-1 mb-2">
-                      <div className="w-2 h-2 rounded-full bg-loss/50" />
-                      <div className="w-2 h-2 rounded-full bg-yellow-400/50" />
-                      <div className="w-2 h-2 rounded-full bg-gain/50" />
+                       <div className="w-2 h-2 rounded-full bg-loss/50" />
+                       <div className="w-2 h-2 rounded-full bg-secondary/50" />
+                       <div className="w-2 h-2 rounded-full bg-gain/50" />
                     </div>
                     <div className="flex gap-2 h-full">
                       <div className="w-1/4 space-y-1.5">
