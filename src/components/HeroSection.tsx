@@ -105,9 +105,9 @@ const HeroSection = () => {
                 <div className="bg-foreground/80 rounded-xl p-2 shadow-xl">
                   <div className="bg-background/90 rounded-lg aspect-[16/10] p-3">
                     <div className="flex gap-1 mb-2">
-                      <div className="w-2 h-2 rounded-full bg-loss/50" />
-                      <div className="w-2 h-2 rounded-full bg-yellow-400/50" />
-                      <div className="w-2 h-2 rounded-full bg-gain/50" />
+                       <div className="w-2 h-2 rounded-full bg-loss/50" />
+                       <div className="w-2 h-2 rounded-full bg-secondary/50" />
+                       <div className="w-2 h-2 rounded-full bg-gain/50" />
                     </div>
                     <div className="flex gap-2 h-full">
                       <div className="w-1/4 space-y-1.5">
