@@ -1,5 +1,6 @@
 import { X, Check, TrendingDown, AlertTriangle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import dinheiroImg from "@/assets/dinheiro.jpg";
 
 const scenarios = [
   { revenue: "R$ 20 mil", loss: "R$ 5.400", annual: "R$ 64.800" },
@@ -38,6 +39,12 @@ const TaxComparisonSection = () => {
             <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
               Aplicativos de terceiros como o iFood podem cobrar entre <strong className="text-dark-foreground/80">12% e 27%</strong> por pedido.
             </p>
+          </div>
+        </AnimateOnScroll>
+
+        <AnimateOnScroll delay={50}>
+          <div className="container-narrow mb-10 md:mb-14">
+            <img src={dinheiroImg} alt="Dinheiro perdido em comissões" className="w-full max-w-sm mx-auto rounded-2xl md:rounded-3xl shadow-2xl shadow-loss/10 opacity-85" />
           </div>
         </AnimateOnScroll>
 
