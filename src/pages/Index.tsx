@@ -6,6 +6,7 @@ import TaxComparisonSection from "@/components/TaxComparisonSection";
 import UrgencySection from "@/components/UrgencySection";
 import SolutionSection from "@/components/SolutionSection";
 import CustomerFlowSection from "@/components/CustomerFlowSection";
+import StoryboardSection from "@/components/StoryboardSection";
 import ValuePropositionSection from "@/components/ValuePropositionSection";
 import BusinessBenefitsSection from "@/components/BusinessBenefitsSection";
 import MockupsSection from "@/components/MockupsSection";
@@ -38,6 +39,7 @@ const Index = () => {
       <UrgencySection />
       <SolutionSection />
       <CustomerFlowSection />
+      <StoryboardSection />
       <ValuePropositionSection />
       <BusinessBenefitsSection />
       <MockupsSection />
