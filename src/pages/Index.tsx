@@ -1,4 +1,5 @@
 import avistaoLogo from "@/assets/avistao-logo.jpg";
+import { Banner } from "@/components/ui/banner";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import TaxComparisonSection from "@/components/TaxComparisonSection";
@@ -15,6 +16,22 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 const Index = () => {
   return (
     <main>
+      <Banner
+        id="proposta-exclusiva"
+        variant="rainbow"
+        className="bg-dark text-dark-foreground shadow-lg"
+        rainbowColors={[
+          "rgba(180,30,30,0.6)",
+          "rgba(180,30,30,0.6)",
+          "transparent",
+          "rgba(200,160,0,0.5)",
+          "transparent",
+          "rgba(180,30,30,0.6)",
+          "transparent",
+        ]}
+      >
+        🚀 Proposta exclusiva para o Avistão Supermercados — Válida por tempo limitado!
+      </Banner>
       <HeroSection />
       <PainSection />
       <TaxComparisonSection />
