@@ -1,3 +1,4 @@
+import avistaoLogo from "@/assets/avistao-logo.jpg";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import TaxComparisonSection from "@/components/TaxComparisonSection";
@@ -26,8 +27,13 @@ const Index = () => {
       <SimulatorSection />
       <CTASection />
       <WhatsAppFloat />
-      <footer className="py-6 text-center text-sm text-muted-foreground bg-surface">
-        © 2026 Mowin — Proposta exclusiva para Avistão Supermercados
+      <footer className="py-8 md:py-10 text-center bg-card border-t">
+        <div className="container">
+          <img src={avistaoLogo} alt="Avistão Supermercados" className="w-10 h-10 rounded-full object-cover mx-auto mb-3 opacity-60" />
+          <p className="text-xs text-muted-foreground">
+            © 2026 Mowin — Proposta exclusiva para Avistão Supermercados
+          </p>
+        </div>
       </footer>
     </main>
   );

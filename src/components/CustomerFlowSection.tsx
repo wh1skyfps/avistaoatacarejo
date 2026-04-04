@@ -1,4 +1,4 @@
-import { Smartphone, ShoppingBag, ClipboardCheck, Truck, ArrowRight } from "lucide-react";
+import { Smartphone, ShoppingBag, ClipboardCheck, Truck } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const steps = [
@@ -10,35 +10,32 @@ const steps = [
 
 const CustomerFlowSection = () => {
   return (
-    <section className="py-24 section-dark">
+    <section className="section-spacing section-dark">
       <div className="container">
         <AnimateOnScroll>
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-black leading-tight">
+          <div className="container-narrow text-center space-y-4 mb-14 md:mb-20">
+            <h2 className="heading-xl">
               Como o cliente compra no app
             </h2>
-            <p className="text-dark-foreground/60 text-lg">
-              Simples para o cliente. Lucrativo para o mercado.
+            <p className="body-lg text-dark-foreground/50">
+              Simples para o cliente. <span className="text-primary font-semibold">Lucrativo para o mercado.</span>
             </p>
           </div>
         </AnimateOnScroll>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 container-wide">
           {steps.map((s, i) => (
-            <AnimateOnScroll key={s.step} delay={i * 100} className="flex items-center gap-2 md:gap-2">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-center space-y-4 min-w-[200px] max-w-[240px] hover:border-primary/40 transition-colors">
-                <div className="mx-auto w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                  <s.icon size={28} />
-                </div>
-                <span className="text-xs font-display font-bold text-primary tracking-widest uppercase">
+            <AnimateOnScroll key={s.step} delay={i * 100}>
+              <div className="bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-7 text-center space-y-4 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 h-full">
+                <span className="inline-block text-[11px] font-display font-bold text-primary tracking-[0.2em] uppercase bg-primary/8 rounded-full px-3 py-1">
                   Passo {s.step}
                 </span>
-                <h3 className="text-base font-display font-bold">{s.title}</h3>
-                <p className="text-dark-foreground/50 text-sm">{s.desc}</p>
+                <div className="mx-auto w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                  <s.icon size={26} strokeWidth={1.5} />
+                </div>
+                <h3 className="text-base md:text-lg font-display font-bold">{s.title}</h3>
+                <p className="text-dark-foreground/40 text-sm leading-relaxed">{s.desc}</p>
               </div>
-              {i < steps.length - 1 && (
-                <ArrowRight className="hidden md:block text-primary/40 shrink-0" size={24} />
-              )}
             </AnimateOnScroll>
           ))}
         </div>

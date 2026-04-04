@@ -6,14 +6,14 @@
 
 @layer base {
   :root {
-    --background: 0 0% 96%;
-    --foreground: 0 0% 4%;
+    --background: 0 0% 97%;
+    --foreground: 0 0% 6%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 4%;
+    --card-foreground: 0 0% 6%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
+    --popover-foreground: 0 0% 6%;
 
     --primary: 0 72% 46%;
     --primary-foreground: 0 0% 100%;
@@ -21,25 +21,25 @@
     --secondary: 45 100% 50%;
     --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 0 60% 95%;
+    --accent: 0 50% 96%;
     --accent-foreground: 0 72% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
     --ring: 0 72% 46%;
 
-    --radius: 0.75rem;
+    --radius: 0.875rem;
 
-    --surface: 0 0% 96%;
-    --surface-alt: 0 10% 97%;
-    --dark: 0 0% 4%;
-    --dark-foreground: 0 0% 96%;
+    --surface: 0 0% 97%;
+    --surface-alt: 40 20% 97%;
+    --dark: 0 0% 5%;
+    --dark-foreground: 0 0% 95%;
     --loss: 0 84% 50%;
     --gain: 142 70% 45%;
     --gain-foreground: 0 0% 100%;
@@ -65,6 +65,8 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html {
@@ -73,20 +75,50 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', system-ui, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(0 72% 46%), hsl(45 100% 50%));
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+    @apply bg-white/70 backdrop-blur-xl border border-white/30 shadow-lg;
   }
 
   .section-dark {
     background-color: hsl(var(--dark));
     color: hsl(var(--dark-foreground));
+  }
+
+  .card-premium {
+    @apply bg-card border rounded-2xl md:rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .heading-xl {
+    @apply text-[1.75rem] leading-[1.15] md:text-4xl lg:text-5xl font-display font-black tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl font-display font-black tracking-tight leading-tight;
+  }
+
+  .body-lg {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .container-narrow {
+    @apply max-w-3xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-5xl mx-auto;
   }
 }

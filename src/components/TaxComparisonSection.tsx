@@ -1,10 +1,10 @@
-import { X, Check, TrendingDown } from "lucide-react";
+import { X, Check, TrendingDown, AlertTriangle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const scenarios = [
-  { revenue: "R$ 20 mil", loss: "R$ 5.400" },
-  { revenue: "R$ 50 mil", loss: "R$ 13.500" },
-  { revenue: "R$ 80 mil", loss: "R$ 21.600" },
+  { revenue: "R$ 20 mil", loss: "R$ 5.400", annual: "R$ 64.800" },
+  { revenue: "R$ 50 mil", loss: "R$ 13.500", annual: "R$ 162.000", featured: true },
+  { revenue: "R$ 80 mil", loss: "R$ 21.600", annual: "R$ 259.200" },
 ];
 
 const thirdParty = [
@@ -23,63 +23,78 @@ const ownApp = [
 
 const TaxComparisonSection = () => {
   return (
-    <section className="py-24 section-dark">
+    <section className="section-spacing section-dark">
       <div className="container">
         <AnimateOnScroll>
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-black leading-tight">
+          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+            <div className="inline-flex items-center gap-2 text-loss font-display font-bold text-xs tracking-widest uppercase">
+              <AlertTriangle size={14} />
+              Atenção
+            </div>
+            <h2 className="heading-xl">
               O problema não é vender pelo delivery. O problema é{" "}
               <span className="text-gradient">vender e deixar o lucro na mesa.</span>
             </h2>
-            <p className="text-dark-foreground/60 text-lg max-w-2xl mx-auto">
-              Aplicativos de terceiros como o iFood podem cobrar entre 12% e 27% por pedido.
+            <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
+              Aplicativos de terceiros como o iFood podem cobrar entre <strong className="text-dark-foreground/80">12% e 27%</strong> por pedido.
             </p>
           </div>
         </AnimateOnScroll>
 
         {/* Loss scenarios */}
         <AnimateOnScroll delay={100}>
-          <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-16">
-            {scenarios.map((s, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 container-narrow mb-10 md:mb-16">
+            {scenarios.map((s) => (
               <div
                 key={s.revenue}
-                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center space-y-3 hover:border-primary/40 transition-colors"
+                className={`rounded-2xl md:rounded-3xl p-6 md:p-7 text-center space-y-3 border transition-all duration-500 hover:-translate-y-1 ${
+                  s.featured
+                    ? "bg-primary/8 border-primary/25 shadow-lg shadow-primary/5 scale-[1.02]"
+                    : "bg-white/[0.04] border-white/10 hover:border-primary/20"
+                }`}
               >
-                <p className="text-sm text-dark-foreground/50 font-medium">Faturamento mensal</p>
-                <p className="text-2xl font-display font-black">{s.revenue}</p>
-                <div className="flex items-center justify-center gap-2 text-loss">
-                  <TrendingDown size={18} />
-                  <span className="text-sm font-medium">Perda com taxas</span>
+                <p className="text-xs text-dark-foreground/40 font-medium uppercase tracking-wider">Faturamento</p>
+                <p className="text-xl md:text-2xl font-display font-black">{s.revenue}<span className="text-sm font-medium text-dark-foreground/40">/mês</span></p>
+                <div className="flex items-center justify-center gap-1.5 text-loss">
+                  <TrendingDown size={15} />
+                  <span className="text-xs font-semibold">Perda com taxas</span>
                 </div>
-                <p className="text-3xl font-display font-black text-loss">
-                  {s.loss}<span className="text-base font-semibold">/mês</span>
+                <p className="text-2xl md:text-3xl font-display font-black text-loss">
+                  {s.loss}<span className="text-sm font-semibold">/mês</span>
                 </p>
+                <div className="bg-loss/8 rounded-xl py-2.5 px-3">
+                  <p className="text-[10px] text-dark-foreground/40 mb-0.5">Prejuízo anual</p>
+                  <p className="text-base md:text-lg font-display font-black text-loss">{s.annual}</p>
+                </div>
               </div>
             ))}
           </div>
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={200}>
-          <p className="text-center text-lg font-display font-bold text-primary mb-12">
-            Em poucos meses, esse valor pode ser muito maior do que o investimento em um app próprio.
+          <p className="text-center text-base md:text-lg font-display font-bold text-primary mb-12 md:mb-16 px-4">
+            Em poucos meses, esse valor pode ser <span className="underline decoration-primary/40 decoration-2 underline-offset-4">muito maior</span> do que o investimento em um app próprio.
           </p>
         </AnimateOnScroll>
 
         {/* Comparison */}
         <AnimateOnScroll delay={300}>
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 container-narrow">
             {/* Third party */}
-            <div className="bg-white/5 border border-loss/20 rounded-2xl p-8 space-y-5">
+            <div className="bg-white/[0.03] border border-loss/15 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-loss/20 flex items-center justify-center">
+                <div className="w-11 h-11 rounded-2xl bg-loss/15 flex items-center justify-center">
                   <X size={20} className="text-loss" />
                 </div>
-                <h3 className="font-display font-bold text-lg">App de terceiros</h3>
+                <div>
+                  <h3 className="font-display font-bold text-base md:text-lg">App de terceiros</h3>
+                  <p className="text-xs text-dark-foreground/40">iFood, Rappi, etc.</p>
+                </div>
               </div>
-              <ul className="space-y-3">
+              <ul className="space-y-3.5">
                 {thirdParty.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-dark-foreground/60">
-                    <X size={16} className="text-loss shrink-0" />
+                  <li key={item} className="flex items-center gap-3 text-dark-foreground/50 text-[15px]">
+                    <X size={15} className="text-loss/70 shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -87,17 +102,20 @@ const TaxComparisonSection = () => {
             </div>
 
             {/* Own app */}
-            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 space-y-5">
+            <div className="bg-primary/[0.06] border border-primary/20 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5 shadow-lg shadow-primary/5">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
+                <div className="w-11 h-11 rounded-2xl bg-primary/15 flex items-center justify-center">
                   <Check size={20} className="text-primary" />
                 </div>
-                <h3 className="font-display font-bold text-lg">App próprio</h3>
+                <div>
+                  <h3 className="font-display font-bold text-base md:text-lg">App próprio</h3>
+                  <p className="text-xs text-dark-foreground/40">100% do Avistão</p>
+                </div>
               </div>
-              <ul className="space-y-3">
+              <ul className="space-y-3.5">
                 {ownApp.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-dark-foreground/80">
-                    <Check size={16} className="text-primary shrink-0" />
+                  <li key={item} className="flex items-center gap-3 text-dark-foreground/70 text-[15px]">
+                    <Check size={15} className="text-primary shrink-0" />
                     {item}
                   </li>
                 ))}
