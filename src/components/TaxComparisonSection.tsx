@@ -43,8 +43,24 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={50}>
-          <div className="container-narrow mb-10 md:mb-14">
-            <img src={dinheiroImg} alt="Dinheiro perdido em comissões" className="w-full max-w-sm mx-auto rounded-2xl md:rounded-3xl shadow-2xl shadow-loss/10 opacity-85" />
+          <div className="container-narrow mb-12 md:mb-16 bg-white/[0.03] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-10 overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+              <div className="w-full md:w-1/2 shrink-0">
+                <img src={dinheiroImg} alt="Dinheiro perdido em comissões" className="w-full max-w-xs mx-auto md:max-w-none rounded-xl md:rounded-2xl shadow-2xl shadow-loss/20" />
+              </div>
+              <div className="space-y-4 text-center md:text-left">
+                <h3 className="text-xl md:text-2xl font-display font-black leading-tight">
+                  Esse dinheiro poderia estar{" "}
+                  <span className="text-primary">no caixa do Avistão</span>
+                </h3>
+                <p className="text-dark-foreground/50 text-sm md:text-base leading-relaxed">
+                  A cada pedido feito por plataformas de terceiros, uma fatia significativa do faturamento vai embora em comissões.
+                </p>
+                <p className="text-dark-foreground/40 text-xs md:text-sm">
+                  Com um app próprio, <span className="text-primary font-bold">100% do valor fica com você.</span>
+                </p>
+              </div>
+            </div>
           </div>
         </AnimateOnScroll>
 
