@@ -1,4 +1,4 @@
-import { ShoppingCart, CreditCard, LayoutDashboard, Palette } from "lucide-react";
+import { ShoppingCart, CreditCard, LayoutDashboard, Palette, Sparkles } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const blocks = [
@@ -26,33 +26,38 @@ const blocks = [
 
 const SolutionSection = () => {
   return (
-    <section id="solucao" className="py-24 bg-surface-alt">
-      <div className="container">
+    <section id="solucao" className="section-spacing bg-surface-alt relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
+      <div className="container relative">
         <AnimateOnScroll>
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-black text-foreground leading-tight">
-              A solução: um app próprio de delivery{" "}
+          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+            <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
+              <Sparkles size={14} />
+              A solução
+            </div>
+            <h2 className="heading-xl text-foreground">
+              Um app próprio de delivery{" "}
               <span className="text-gradient">para o Avistão</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
               Uma estrutura profissional para vender online com mais praticidade, 
               mais organização e mais lucro.
             </p>
           </div>
         </AnimateOnScroll>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {blocks.map((b, i) => (
             <AnimateOnScroll key={b.title} delay={i * 100}>
-              <div className="bg-card border rounded-2xl p-8 space-y-5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all hover:-translate-y-1 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                  <b.icon size={28} />
+              <div className="card-premium p-6 md:p-8 space-y-5 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
+                <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary">
+                  <b.icon size={26} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl font-display font-bold text-foreground">{b.title}</h3>
+                <h3 className="text-lg md:text-xl font-display font-bold text-foreground">{b.title}</h3>
                 <ul className="space-y-2.5">
                   {b.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    <li key={item} className="flex items-center gap-3 text-muted-foreground text-[15px]">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0" />
                       {item}
                     </li>
                   ))}
