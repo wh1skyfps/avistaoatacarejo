@@ -1,4 +1,5 @@
 import avistaoLogo from "@/assets/avistao-logo.jpg";
+import { Banner } from "@/components/ui/banner";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import TaxComparisonSection from "@/components/TaxComparisonSection";
