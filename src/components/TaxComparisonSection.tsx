@@ -42,6 +42,12 @@ const TaxComparisonSection = () => {
           </div>
         </AnimateOnScroll>
 
+        <AnimateOnScroll delay={50}>
+          <div className="container-narrow mb-10 md:mb-14">
+            <img src={dinheiroImg} alt="Dinheiro perdido em comissões" className="w-full max-w-sm mx-auto rounded-2xl md:rounded-3xl shadow-2xl shadow-loss/10 opacity-85" />
+          </div>
+        </AnimateOnScroll>
+
         {/* Loss scenarios */}
         <AnimateOnScroll delay={100}>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 container-narrow mb-10 md:mb-16">
