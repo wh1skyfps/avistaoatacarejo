@@ -19,7 +19,7 @@ const ValuePropositionSection = () => {
               <Shield size={14} />
               Proposta de Valor
             </div>
-            <h2 className="heading-xl text-foreground">
+            <h2 className="heading-xl text-dark-foreground">
               O que está incluso na solução
             </h2>
           </div>
