@@ -104,7 +104,7 @@ const AvistaoCardSection = () => {
         </div>
 
         {/* Feature cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 container-wide mb-16 md:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 container-wide mb-18 md:mb-28">
           {features.map((f, i) => (
             <AnimateOnScroll key={f.title} delay={i * 80}>
               <div className="bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-6 md:p-7 space-y-4 hover:border-secondary/20 hover:-translate-y-1 transition-all duration-500 h-full">
