@@ -97,7 +97,7 @@ const StoryboardSection = () => {
                     <h3 className="text-lg md:text-2xl font-display font-bold text-foreground leading-snug">
                       {step.title}
                     </h3>
-                    <p className="text-sm md:text-base text-dark-foreground/50 leading-relaxed max-w-md mx-auto md:mx-0">
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-md mx-auto md:mx-0">
                       {step.text}
                     </p>
                   </div>
