@@ -43,7 +43,7 @@ const ValuePropositionSection = () => {
                   <div className="w-7 h-7 rounded-full bg-primary/8 flex items-center justify-center shrink-0 mt-0.5">
                     <Check size={14} className="text-primary" />
                   </div>
-                  <span className="text-foreground/75 text-[15px] md:text-base leading-relaxed">{item}</span>
+                  <span className="text-dark-foreground/60 text-[15px] md:text-base leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
