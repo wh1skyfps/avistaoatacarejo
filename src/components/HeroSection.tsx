@@ -59,7 +59,7 @@ const HeroSection = () => {
 
             <AnimateOnScroll delay={400}>
               <div className="flex flex-wrap gap-x-5 gap-y-2 pt-1">
-                {["App próprio", "Sem comissão por pedido", "Mais controle", "Mais lucro"].map((item) => (
+                {["App próprio", "Sem comissão", "Multilojas", "Avistão Card", "Mais lucro"].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-xs md:text-sm text-dark-foreground/40 font-medium">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                     {item}

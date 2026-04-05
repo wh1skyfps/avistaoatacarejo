@@ -36,12 +36,12 @@ const SolutionSection = () => {
               A solução
             </div>
             <h2 className="heading-xl text-foreground">
-              Um app próprio de delivery{" "}
+              Uma plataforma digital própria{" "}
               <span className="text-gradient">para o Avistão</span>
             </h2>
             <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
-              Uma estrutura profissional para vender online com mais praticidade, 
-              mais organização e mais lucro.
+              Vendas, delivery, cartão próprio e gestão multilojas — tudo em uma 
+              estrutura profissional feita para a rede crescer.
             </p>
           </div>
         </AnimateOnScroll>
