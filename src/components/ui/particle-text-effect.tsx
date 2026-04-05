@@ -120,12 +120,14 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     const imageData = offCtx.getImageData(0, 0, canvas.width, canvas.height)
     const pixels = imageData.data
 
-    // Random vibrant color per word
-    const newColor = {
-      r: Math.random() * 255,
-      g: Math.random() * 255,
-      b: Math.random() * 255,
-    }
+    // Avistão brand colors: red and gold
+    const brandColors = [
+      { r: 185, g: 28, b: 28 },   // red
+      { r: 220, g: 38, b: 38 },   // bright red
+      { r: 245, g: 158, b: 11 },  // amber/gold
+      { r: 251, g: 191, b: 36 },  // yellow/gold
+    ]
+    const newColor = brandColors[Math.floor(Math.random() * brandColors.length)]
 
     const particles = particlesRef.current
     let particleIndex = 0
