@@ -1,5 +1,7 @@
+import { useState, useCallback } from "react";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import { Banner } from "@/components/ui/banner";
+import IntroAnimation from "@/components/IntroAnimation";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import TaxComparisonSection from "@/components/TaxComparisonSection";
@@ -18,6 +20,9 @@ import CTASection from "@/components/CTASection";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
+  const [introComplete, setIntroComplete] = useState(false);
+  const handleIntroComplete = useCallback(() => setIntroComplete(true), []);
+
   return (
     <main>
       <Banner
