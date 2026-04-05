@@ -1,5 +1,6 @@
 import { ShoppingCart, Award, Gauge, Lock, Heart, TrendingUp, DollarSign } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 
 const benefits = [
   { icon: ShoppingCart, text: "Mais pedidos no dia a dia" },
