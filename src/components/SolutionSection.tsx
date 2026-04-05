@@ -26,8 +26,8 @@ const blocks = [
 
 const SolutionSection = () => {
   return (
-    <section id="solucao" className="section-spacing bg-surface-alt relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
+    <section id="solucao" className="section-spacing section-dark relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(0_72%_46%_/_0.04),transparent_60%)]" />
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
@@ -35,11 +35,11 @@ const SolutionSection = () => {
               <Sparkles size={14} />
               A solução
             </div>
-            <h2 className="heading-xl text-foreground">
+            <h2 className="heading-xl text-dark-foreground">
               Uma plataforma digital própria{" "}
               <span className="text-gradient">para o Avistão</span>
             </h2>
-            <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
               Vendas, delivery, cartão próprio e gestão multilojas — tudo em uma 
               estrutura profissional feita para a rede crescer.
             </p>
@@ -49,14 +49,14 @@ const SolutionSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-4xl mx-auto">
           {blocks.map((b, i) => (
             <AnimateOnScroll key={b.title} delay={i * 100}>
-              <div className="card-premium p-7 md:p-9 space-y-6 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-7 md:p-9 space-y-6 hover:border-primary/25 hover:-translate-y-1 transition-all duration-500 h-full">
                 <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary">
                   <b.icon size={26} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg md:text-xl font-display font-bold text-foreground">{b.title}</h3>
+                <h3 className="text-lg md:text-xl font-display font-bold text-dark-foreground">{b.title}</h3>
                 <ul className="space-y-2.5">
                   {b.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-muted-foreground text-[15px]">
+                    <li key={item} className="flex items-center gap-3 text-dark-foreground/50 text-[15px]">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0" />
                       {item}
                     </li>
