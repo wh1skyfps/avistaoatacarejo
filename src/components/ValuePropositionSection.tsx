@@ -1,5 +1,6 @@
 import { Check, Star, Shield } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 
 const items = [
   "App próprio com catálogo de produtos, carrinho, checkout e pagamento",
@@ -11,8 +12,9 @@ const items = [
 
 const ValuePropositionSection = () => {
   return (
-    <section className="section-spacing bg-background">
-      <div className="container">
+    <section className="section-spacing bg-background relative overflow-hidden">
+      <div className="absolute inset-0 text-slate-950 dark:text-white opacity-30 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
+      <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">

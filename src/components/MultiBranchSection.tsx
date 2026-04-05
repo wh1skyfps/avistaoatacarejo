@@ -1,5 +1,6 @@
 import { MapPin, Building2, Users, Package, Truck, BarChart3, Settings, Globe } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 
 const branches = [
   { name: "Avistão Atacarejo", emoji: "🏪" },
@@ -25,6 +26,7 @@ const MultiBranchSection = () => {
   return (
     <section className="section-spacing bg-surface-alt relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
+      <div className="absolute inset-0 text-slate-950 dark:text-white opacity-30 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
 
       <div className="container relative">
         {/* Header */}
