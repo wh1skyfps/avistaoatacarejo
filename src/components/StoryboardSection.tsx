@@ -41,8 +41,8 @@ const steps = [
 
 const StoryboardSection = () => {
   return (
-    <section className="section-spacing section-dark relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.02),transparent_70%)]" />
+     <section className="section-spacing bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.03),transparent_70%)]" />
       
       <div className="container relative">
         <AnimateOnScroll>
