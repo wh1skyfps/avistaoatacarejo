@@ -131,7 +131,7 @@ const AvistaoCardSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="container-narrow space-y-4 md:space-y-5">
+        <div className="container-narrow space-y-5 md:space-y-6">
           {steps.map((step, i) => (
             <AnimateOnScroll key={step.title} delay={i * 80}>
               <div className="flex items-start gap-5 md:gap-6 bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-5 md:p-7 hover:border-secondary/20 transition-all duration-500">
