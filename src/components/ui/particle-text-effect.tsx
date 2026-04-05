@@ -78,7 +78,7 @@ class Particle {
 
     if (drawAsPoints) {
       ctx.fillStyle = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`
-      ctx.fillRect(this.pos.x, this.pos.y, 2, 2)
+      ctx.fillRect(this.pos.x, this.pos.y, 3, 3)
     } else {
       ctx.fillStyle = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`
       ctx.beginPath()
@@ -140,7 +140,7 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
   const frameCountRef = useRef(0)
   const wordIndexRef = useRef(0)
 
-  const pixelSteps = 6
+  const pixelSteps = 4
   const drawAsPoints = true
 
   const generateRandomPos = (x: number, y: number, mag: number): Vector2D => {
@@ -170,8 +170,9 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     offscreenCanvas.height = canvas.height
     const offscreenCtx = offscreenCanvas.getContext("2d")!
 
-    offscreenCtx.fillStyle = "white"
-    offscreenCtx.font = "bold 80px Arial"
+    offscreenCtx.clearRect(0, 0, canvas.width, canvas.height)
+    offscreenCtx.fillStyle = "black"
+    offscreenCtx.font = "700 118px 'Space Grotesk', Arial, sans-serif"
     offscreenCtx.textAlign = "center"
     offscreenCtx.textBaseline = "middle"
     offscreenCtx.fillText(word, canvas.width / 2, canvas.height / 2)
@@ -180,9 +181,9 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     const pixels = imageData.data
 
     const newColor = {
-      r: 10 + Math.random() * 30,
-      g: 10 + Math.random() * 20,
-      b: 10 + Math.random() * 20,
+      r: 8,
+      g: 8,
+      b: 8,
     }
 
     const particles = particlesRef.current
@@ -219,10 +220,10 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
           particle.pos.x = randomPos.x
           particle.pos.y = randomPos.y
 
-          particle.maxSpeed = Math.random() * 6 + 4
-          particle.maxForce = particle.maxSpeed * 0.05
-          particle.particleSize = Math.random() * 6 + 6
-          particle.colorBlendRate = Math.random() * 0.0275 + 0.0025
+          particle.maxSpeed = Math.random() * 5 + 3
+          particle.maxForce = particle.maxSpeed * 0.045
+          particle.particleSize = Math.random() * 4 + 5
+          particle.colorBlendRate = Math.random() * 0.02 + 0.01
 
           particles.push(particle)
         }
@@ -294,7 +295,7 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
         cancelAnimationFrame(animationRef.current)
       }
     }
-  }, [])
+  }, [words])
 
   return (
     <canvas
