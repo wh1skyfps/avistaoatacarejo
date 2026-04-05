@@ -11,6 +11,7 @@ import AvistaoCardSection from "@/components/AvistaoCardSection";
 import MultiBranchSection from "@/components/MultiBranchSection";
 import ValuePropositionSection from "@/components/ValuePropositionSection";
 import BusinessBenefitsSection from "@/components/BusinessBenefitsSection";
+import AppScreensSection from "@/components/AppScreensSection";
 import MockupsSection from "@/components/MockupsSection";
 import SimulatorSection from "@/components/SimulatorSection";
 import CTASection from "@/components/CTASection";
@@ -46,6 +47,7 @@ const Index = () => {
       <MultiBranchSection />
       <ValuePropositionSection />
       <BusinessBenefitsSection />
+      <AppScreensSection />
       <MockupsSection />
       <SimulatorSection />
       <CTASection />
