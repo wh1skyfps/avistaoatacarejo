@@ -48,7 +48,7 @@ const ValuePropositionSection = () => {
               ))}
             </ul>
 
-            <div className="pt-5 border-t border-border/50">
+            <div className="pt-5 border-t border-white/10">
               <p className="text-center font-display font-bold text-base md:text-lg text-primary">
                 Você investe uma vez para ter um canal de vendas próprio.
               </p>

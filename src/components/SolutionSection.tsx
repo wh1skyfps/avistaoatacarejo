@@ -56,7 +56,7 @@ const SolutionSection = () => {
                 <h3 className="text-lg md:text-xl font-display font-bold text-dark-foreground">{b.title}</h3>
                 <ul className="space-y-2.5">
                   {b.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-muted-foreground text-[15px]">
+                    <li key={item} className="flex items-center gap-3 text-dark-foreground/50 text-[15px]">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0" />
                       {item}
                     </li>
