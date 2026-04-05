@@ -115,7 +115,7 @@ export default {
         },
         "float-gentle": {
           "0%, 100%": { transform: "translateY(0) rotate(-2deg)" },
-          "50%": { transform: "translateY(-6px) rotate(-1deg)" },
+          "50%": { transform: "translateY(-4px) rotate(-1.5deg)" },
         },
         "pulse-glow": {
           "0%, 100%": { boxShadow: "0 0 20px hsl(0 72% 46% / 0.3)" },
