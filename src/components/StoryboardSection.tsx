@@ -94,7 +94,7 @@ const StoryboardSection = () => {
                       <div className="w-8 h-px bg-primary/30" />
                       <span className="text-[10px] font-display font-bold text-primary tracking-[0.2em] uppercase">Passo {step.num}</span>
                     </div>
-                    <h3 className="text-lg md:text-2xl font-display font-bold text-dark-foreground leading-snug">
+                    <h3 className="text-lg md:text-2xl font-display font-bold text-foreground leading-snug">
                       {step.title}
                     </h3>
                     <p className="text-sm md:text-base text-dark-foreground/50 leading-relaxed max-w-md mx-auto md:mx-0">
