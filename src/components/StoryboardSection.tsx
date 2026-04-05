@@ -50,7 +50,7 @@ const StoryboardSection = () => {
             <p className="text-xs md:text-sm font-display font-bold text-primary tracking-widest uppercase">
               Jornada do Cliente
             </p>
-            <h2 className="heading-xl text-dark-foreground">
+            <h2 className="heading-xl text-foreground">
               Como seria a experiência do seu cliente{" "}
               <span className="text-gradient">com o app</span>
             </h2>
