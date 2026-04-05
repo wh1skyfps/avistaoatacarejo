@@ -107,9 +107,9 @@ const StoryboardSection = () => {
 
         <AnimateOnScroll delay={300}>
           <div className="text-center mt-8 md:mt-12">
-            <div className="inline-block bg-card border rounded-2xl px-8 py-5 shadow-sm">
-              <p className="font-display font-bold text-base md:text-lg text-foreground">
-                Simples para o cliente. <span className="text-primary">Lucrativo para o mercado.</span>
+             <div className="inline-block bg-white/[0.04] border border-white/10 rounded-2xl px-8 py-5">
+               <p className="font-display font-bold text-base md:text-lg text-dark-foreground">
+                 Simples para o cliente. <span className="text-primary">Lucrativo para o mercado.</span>
               </p>
             </div>
           </div>
