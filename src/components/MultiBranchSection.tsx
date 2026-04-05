@@ -48,7 +48,7 @@ const MultiBranchSection = () => {
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 container-wide mb-16 md:mb-24">
           {/* Client side */}
           <AnimateOnScroll delay={50}>
-            <div className="card-premium p-6 md:p-8 space-y-6 h-full">
+             <div className="card-premium p-7 md:p-9 space-y-7 h-full">
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
                   <Users size={20} className="text-primary" />
