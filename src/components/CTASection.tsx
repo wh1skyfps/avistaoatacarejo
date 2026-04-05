@@ -33,7 +33,7 @@ const CTASection = () => {
             </p>
 
             <a
-              href="https://wa.me/5587991516025?text=Ol%C3%A1%2C%20vi%20a%20proposta%20do%20app%20de%20delivery%20do%20Avist%C3%A3o%20e%20quero%20entender%20melhor%20como%20funcionaria."
+              href="https://wa.me/5587991516025?text=Quero%20escalar%20minha%20empresa%20Mowin!%20%F0%9F%9A%80"
               target="_blank"
               rel="noopener noreferrer"
             >
