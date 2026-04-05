@@ -1,6 +1,5 @@
 import { Clock, MessageSquareX, ShieldOff, Users, TrendingDown } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const pains = [
   { icon: Users, text: "Cliente quer comprar sem sair de casa", highlight: "sem sair de casa" },
