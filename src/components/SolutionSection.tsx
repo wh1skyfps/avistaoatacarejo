@@ -35,7 +35,7 @@ const SolutionSection = () => {
               <Sparkles size={14} />
               A solução
             </div>
-            <h2 className="heading-xl text-foreground">
+            <h2 className="heading-xl text-dark-foreground">
               Uma plataforma digital própria{" "}
               <span className="text-gradient">para o Avistão</span>
             </h2>
