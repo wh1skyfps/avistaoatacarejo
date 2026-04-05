@@ -32,8 +32,8 @@ const ValuePropositionSection = () => {
                 <Star size={22} className="text-primary" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-lg md:text-xl text-foreground">Entrega da solução</h3>
-                <p className="text-xs text-muted-foreground">Tudo que o Avistão precisa para começar</p>
+                 <h3 className="font-display font-bold text-lg md:text-xl text-dark-foreground">Entrega da solução</h3>
+                 <p className="text-xs text-dark-foreground/40">Tudo que o Avistão precisa para começar</p>
               </div>
             </div>
 
