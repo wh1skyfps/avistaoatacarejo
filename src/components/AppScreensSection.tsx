@@ -563,7 +563,7 @@ const AppScreensSection = () => {
 
   return (
     <section className="section-spacing section-dark overflow-hidden relative">
-      <BeamsBackground beamCount={6} />
+      
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-5 mb-10 md:mb-14">

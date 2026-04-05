@@ -5,7 +5,7 @@ import avistaoLogo from "@/assets/avistao-logo.jpg";
 const MockupsSection = () => {
   return (
     <section className="section-spacing section-dark overflow-hidden relative">
-      <BeamsBackground beamCount={6} />
+      
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
