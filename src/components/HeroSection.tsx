@@ -43,11 +43,10 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
               <TextEffect
                 per="word"
                 as="h1"
-                preset="blur"
+                preset="slide"
                 delay={0.6}
                 trigger={introComplete}
-                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground [&_.gradient-word]:bg-gradient-to-r [&_.gradient-word]:from-primary [&_.gradient-word]:to-primary/80 [&_.gradient-word]:bg-clip-text [&_.gradient-word]:text-transparent"
-                segmentWrapperClassName=""
+                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
               >
                 Sua rede merece uma plataforma digital própria
               </TextEffect>
