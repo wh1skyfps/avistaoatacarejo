@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 z-[1] bg-black/70" />
+      <div className="absolute inset-0 z-[1] bg-black/85" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 py-20 md:py-28 lg:py-36">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
