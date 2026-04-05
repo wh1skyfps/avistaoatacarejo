@@ -47,7 +47,7 @@ const Index = () => {
       <TaxComparisonSection />
       <UrgencySection />
       <SolutionSection />
-      <CustomerFlowSection />
+      <StoryboardSection />
       <StoryboardSection />
       <AvistaoCardSection />
       <MultiBranchSection />
