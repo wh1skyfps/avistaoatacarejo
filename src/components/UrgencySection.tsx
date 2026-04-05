@@ -6,6 +6,7 @@ const UrgencySection = () => {
   return (
     <section className="section-spacing bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.03),transparent_70%)]" />
+      <FloatingPaths position={1} className="text-slate-950 opacity-25" />
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
