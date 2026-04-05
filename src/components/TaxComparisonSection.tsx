@@ -72,7 +72,7 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={80}>
-          <div className="container-narrow mb-12 md:mb-16 p-6 md:p-10 overflow-hidden">
+          <div className="container-narrow mb-14 md:mb-20 p-8 md:p-12 overflow-hidden">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
               <motion.div
                 className="w-full md:w-1/2 shrink-0"
