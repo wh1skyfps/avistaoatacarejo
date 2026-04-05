@@ -48,7 +48,6 @@ const Index = () => {
       <UrgencySection />
       <SolutionSection />
       <StoryboardSection />
-      <StoryboardSection />
       <AvistaoCardSection />
       <MultiBranchSection />
       <ValuePropositionSection />
