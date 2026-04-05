@@ -39,28 +39,19 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
               </TextEffect>
             </span>
 
-            <h1 className="mt-8 text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05]">
+            <div className="mt-8">
               <TextEffect
                 per="word"
-                as="span"
+                as="h1"
                 preset="blur"
                 delay={0.6}
                 trigger={introComplete}
-                className="text-dark-foreground"
+                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground [&_.gradient-word]:bg-gradient-to-r [&_.gradient-word]:from-primary [&_.gradient-word]:to-primary/80 [&_.gradient-word]:bg-clip-text [&_.gradient-word]:text-transparent"
+                segmentWrapperClassName=""
               >
-                Sua rede merece uma
-              </TextEffect>{" "}
-              <TextEffect
-                per="word"
-                as="span"
-                preset="blur"
-                delay={0.9}
-                trigger={introComplete}
-                className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent"
-              >
-                plataforma digital própria
+                Sua rede merece uma plataforma digital própria
               </TextEffect>
-            </h1>
+            </div>
 
             <div className="mt-7">
               <TextEffect
