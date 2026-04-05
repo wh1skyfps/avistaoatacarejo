@@ -23,7 +23,7 @@ const UrgencySection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 container-narrow">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 container-narrow">
           {[
             { icon: Target, text: "O cliente já está pronto", sub: "O comportamento de compra mudou definitivamente" },
             { icon: Clock, text: "O comportamento já mudou", sub: "Compras pelo celular são a nova normalidade" },
