@@ -25,6 +25,7 @@ const Index = () => {
 
   return (
     <main>
+      {!introComplete && <IntroAnimation onComplete={handleIntroComplete} />}
       <Banner
         id="proposta-exclusiva"
         variant="rainbow"
