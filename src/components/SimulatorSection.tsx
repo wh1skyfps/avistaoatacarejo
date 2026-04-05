@@ -25,7 +25,7 @@ const SimulatorSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-7 max-w-4xl mx-auto">
           {scenarios.map((s, i) => (
             <AnimateOnScroll key={s.revenue} delay={i * 100}>
               <div className={`card-premium p-6 md:p-8 space-y-5 text-center hover:-translate-y-1 ${
