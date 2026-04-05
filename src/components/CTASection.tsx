@@ -9,6 +9,7 @@ const CTASection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[160px]" />
         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-secondary/5 rounded-full blur-[120px]" />
       </div>
+      <div className="absolute inset-0 text-white opacity-15 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
 
       <div className="container relative z-10">
         <AnimateOnScroll>

@@ -33,8 +33,9 @@ const ownApp = [
 
 const TaxComparisonSection = () => {
   return (
-    <section className="section-spacing section-dark">
-      <div className="container">
+    <section className="section-spacing section-dark relative overflow-hidden">
+      <div className="absolute inset-0 text-white opacity-20 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
+      <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-loss font-display font-bold text-xs tracking-widest uppercase">

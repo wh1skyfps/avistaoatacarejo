@@ -43,6 +43,7 @@ const StoryboardSection = () => {
   return (
     <section className="section-spacing section-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.02),transparent_70%)]" />
+      <div className="absolute inset-0 text-white opacity-15 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">

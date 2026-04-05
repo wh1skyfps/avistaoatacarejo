@@ -14,8 +14,9 @@ const benefits = [
 
 const BusinessBenefitsSection = () => {
   return (
-    <section className="section-spacing bg-surface-alt">
-      <div className="container">
+    <section className="section-spacing bg-surface-alt relative overflow-hidden">
+      <div className="absolute inset-0 text-slate-950 dark:text-white opacity-30 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
+      <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <h2 className="heading-xl text-foreground">
