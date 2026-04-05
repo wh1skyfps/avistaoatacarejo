@@ -43,18 +43,31 @@ const Index = () => {
         🚀 Proposta exclusiva para o Avistão Supermercados — Válida por tempo limitado!
       </Banner>
       <HeroSection />
+      <div className="section-divider" />
       <PainSection />
+      <div className="section-divider" />
       <TaxComparisonSection />
+      <div className="section-divider-dark section-divider" />
       <UrgencySection />
+      <div className="section-divider" />
       <SolutionSection />
+      <div className="section-divider" />
       <StoryboardSection />
+      <div className="section-divider-dark section-divider" />
       <AvistaoCardSection />
+      <div className="section-divider-dark section-divider" />
       <MultiBranchSection />
+      <div className="section-divider" />
       <ValuePropositionSection />
+      <div className="section-divider" />
       <BusinessBenefitsSection />
+      <div className="section-divider" />
       <AppScreensSection />
+      <div className="section-divider-dark section-divider" />
       <MockupsSection />
+      <div className="section-divider-dark section-divider" />
       <SimulatorSection />
+      <div className="section-divider" />
       <CTASection />
       <WhatsAppFloat />
       <footer className="py-8 md:py-10 text-center bg-card border-t">
