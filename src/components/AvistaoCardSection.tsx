@@ -85,7 +85,7 @@ const AvistaoCardSection = () => {
               <img
                 src={avistaoCardImg}
                 alt="Avistão Card / Tricard"
-                className="w-52 md:w-64 drop-shadow-[0_20px_40px_rgba(200,160,0,0.25)] animate-float hover:scale-105 transition-transform duration-700"
+                className="w-52 md:w-64 drop-shadow-[0_20px_40px_rgba(200,160,0,0.25)] animate-float-gentle hover:scale-[1.03] transition-transform duration-1000 ease-in-out"
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={150} className="space-y-4 text-center md:text-left">
