@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 
 import story1 from "@/assets/story-1-casa.jpg";
 import story2 from "@/assets/story-2-app.jpg";
