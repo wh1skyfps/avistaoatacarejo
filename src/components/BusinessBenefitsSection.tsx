@@ -1,6 +1,5 @@
 import { ShoppingCart, Award, Gauge, Lock, Heart, TrendingUp, DollarSign } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const benefits = [
   { icon: ShoppingCart, text: "Mais pedidos no dia a dia" },
@@ -15,7 +14,6 @@ const benefits = [
 const BusinessBenefitsSection = () => {
   return (
     <section className="section-spacing bg-surface-alt relative overflow-hidden">
-      <div className="absolute inset-0 text-slate-950 dark:text-white opacity-30 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">

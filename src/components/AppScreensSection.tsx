@@ -6,7 +6,6 @@ import {
   Smartphone, FileText, Phone, Eye
 } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import avistaoCardImg from "@/assets/avistao-card.png";
 
@@ -563,7 +562,6 @@ const AppScreensSection = () => {
 
   return (
     <section className="section-spacing section-dark overflow-hidden relative">
-      <div className="absolute inset-0 text-white opacity-15 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-5 mb-10 md:mb-14">

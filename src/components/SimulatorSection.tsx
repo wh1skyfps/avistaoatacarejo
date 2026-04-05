@@ -1,6 +1,5 @@
 import { TrendingDown, Calculator } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const scenarios = [
   { revenue: "R$ 20 mil", tax: "27%", loss: "R$ 5.400", annual: "R$ 64.800" },
@@ -12,7 +11,6 @@ const SimulatorSection = () => {
   return (
     <section className="section-spacing bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
-      <div className="absolute inset-0 text-slate-950 dark:text-white opacity-30 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
