@@ -116,7 +116,7 @@ const MultiBranchSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 container-wide">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5 container-wide">
           {branches.map((b, i) => (
             <AnimateOnScroll key={b.name} delay={i * 60}>
               <div className="card-premium text-center p-5 md:p-6 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 space-y-2.5">
