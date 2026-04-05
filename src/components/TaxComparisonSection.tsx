@@ -1,6 +1,13 @@
-import { X, Check, TrendingDown, AlertTriangle } from "lucide-react";
+import { X, Check, TrendingDown, AlertTriangle, Percent } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import dinheiroImg from "@/assets/dinheiro.png";
+
+const taxBreakdown = [
+  { label: "Comissão por pedido", value: "12% a 27%", desc: "Cada venda feita pelo iFood desconta essa porcentagem direto do seu faturamento." },
+  { label: "Taxa de entrega repassada", value: "Variável", desc: "O custo logístico muitas vezes recai sobre o estabelecimento, não sobre o cliente." },
+  { label: "Mensalidade do plano", value: "R$ 100+/mês", desc: "Planos com maior visibilidade cobram mensalidades fixas além das comissões." },
+  { label: "Promoções obrigatórias", value: "Descontos forçados", desc: "Para aparecer no app, muitas vezes é preciso participar de promoções que reduzem sua margem." },
+];
 
 const scenarios = [
   { revenue: "R$ 20 mil", loss: "R$ 5.400", annual: "R$ 64.800" },
@@ -9,16 +16,16 @@ const scenarios = [
 ];
 
 const thirdParty = [
-  "Comissão por pedido",
-  "Dependência da plataforma",
-  "Menor controle",
-  "Cliente não é realmente seu",
+  "Comissão de até 27% por pedido",
+  "Dependência total da plataforma",
+  "Menor controle sobre a experiência",
+  "Cliente pertence ao iFood, não a você",
 ];
 
 const ownApp = [
-  "Sem comissão por pedido",
-  "Marca fortalecida",
-  "Controle total",
+  "Zero comissão por pedido",
+  "Marca 100% fortalecida",
+  "Controle total da operação",
   "Cliente dentro do seu ecossistema",
 ];
 
@@ -33,16 +40,37 @@ const TaxComparisonSection = () => {
               Atenção
             </div>
             <h2 className="heading-xl">
-              O problema não é vender pelo delivery. O problema é{" "}
-              <span className="text-gradient">vender e deixar o lucro na mesa.</span>
+              Você está pagando caro para{" "}
+              <span className="text-gradient">vender o que já é seu.</span>
             </h2>
             <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
-              Aplicativos de terceiros como o iFood podem cobrar entre <strong className="text-dark-foreground/80">12% e 27%</strong> por pedido.
+              O iFood e outras plataformas cobram taxas que podem ultrapassar <strong className="text-dark-foreground/80">27% por pedido</strong>. 
+              Isso significa que a cada R$ 100 vendidos, até R$ 27 vão para o bolso de outra empresa — e não para o seu caixa.
             </p>
           </div>
         </AnimateOnScroll>
 
+        {/* Tax breakdown */}
         <AnimateOnScroll delay={50}>
+          <div className="container-narrow mb-12 md:mb-16">
+            <h3 className="text-center text-sm md:text-base font-display font-bold text-dark-foreground/60 mb-6 uppercase tracking-wider">
+              Como o iFood cobra do seu negócio
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {taxBreakdown.map((item, i) => (
+                <div key={item.label} className="bg-white/[0.03] border border-loss/10 rounded-2xl p-5 md:p-6 space-y-2 hover:border-loss/25 transition-all duration-300">
+                  <div className="flex items-center justify-between">
+                    <span className="font-display font-bold text-sm text-dark-foreground/80">{item.label}</span>
+                    <span className="text-loss font-display font-black text-sm bg-loss/10 px-2.5 py-1 rounded-lg">{item.value}</span>
+                  </div>
+                  <p className="text-xs text-dark-foreground/40 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </AnimateOnScroll>
+
+        <AnimateOnScroll delay={80}>
           <div className="container-narrow mb-12 md:mb-16 bg-white/[0.03] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-10 overflow-hidden">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
               <div className="w-full md:w-1/2 shrink-0">
@@ -54,7 +82,7 @@ const TaxComparisonSection = () => {
                   <span className="text-primary">no caixa do Avistão</span>
                 </h3>
                 <p className="text-dark-foreground/50 text-sm md:text-base leading-relaxed">
-                  A cada pedido feito por plataformas de terceiros, uma fatia significativa do faturamento vai embora em comissões.
+                  A cada pedido feito por plataformas de terceiros, uma fatia significativa do faturamento vai embora em comissões — sem que o cliente sequer saiba que está comprando do Avistão.
                 </p>
                 <p className="text-dark-foreground/40 text-xs md:text-sm">
                   Com um app próprio, <span className="text-primary font-bold">100% do valor fica com você.</span>
