@@ -1,19 +1,5 @@
-import { ArrowRight, MessageCircle, Zap, Target, ShoppingCart, Store, CreditCard, TrendingUp, Star } from "lucide-react";
+import { ArrowRight, MessageCircle, Zap, Star } from "lucide-react";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
-
-const StatItem = ({ value, label }: { value: string; label: string }) => (
-  <div className="flex flex-col items-center justify-center transition-transform hover:-translate-y-1 cursor-default">
-    <span className="text-xl font-bold text-white sm:text-2xl font-display">{value}</span>
-    <span className="text-[10px] uppercase tracking-wider text-zinc-400 font-medium sm:text-xs">{label}</span>
-  </div>
-);
-
-const FEATURES = [
-  { name: "Delivery próprio", icon: ShoppingCart },
-  { name: "Multilojas", icon: Store },
-  { name: "Avistão Card", icon: CreditCard },
-  { name: "Mais lucro", icon: TrendingUp },
-];
 
 const HeroSection = () => {
   return (
