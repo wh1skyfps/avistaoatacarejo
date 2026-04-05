@@ -113,7 +113,7 @@ const HeroSection = () => {
 
             {/* Phone — overlapping laptop bottom-right */}
             <motion.div
-              className="relative z-20 -ml-14 sm:-ml-16 w-[100px] sm:w-[130px] lg:w-[150px]"
+              className="relative z-20 -ml-14 sm:-ml-20 w-[160px] sm:w-[200px] lg:w-[240px]"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             >
