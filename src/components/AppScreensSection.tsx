@@ -562,7 +562,6 @@ const AppScreensSection = () => {
 
   return (
     <section className="section-spacing section-dark overflow-hidden relative">
-      <div className="absolute inset-0 text-white opacity-15 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-5 mb-10 md:mb-14">
