@@ -1,4 +1,5 @@
 import avistaoLogo from "@/assets/avistao-logo.jpg";
+import mowinLogo from "@/assets/mowin-logo.jpg";
 import AnimateOnScroll from "./AnimateOnScroll";
 import { ParticleTextEffect } from "./ui/particle-text-effect";
 
@@ -26,10 +27,12 @@ const CTASection = () => {
                 />
               </div>
               <span className="text-white/40 font-display font-bold text-xl md:text-2xl">×</span>
-              <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/5 ring-2 ring-white/10 shadow-2xl">
-                <span className="font-display font-black text-lg md:text-xl text-white tracking-tight">
-                  mowin
-                </span>
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden ring-2 ring-white/10 shadow-2xl">
+                <img
+                  src={mowinLogo}
+                  alt="Mowin"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

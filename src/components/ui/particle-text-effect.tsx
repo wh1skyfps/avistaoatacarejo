@@ -180,9 +180,9 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     const pixels = imageData.data
 
     const newColor = {
-      r: 185 + Math.random() * 70,
-      g: 28 + Math.random() * 40,
-      b: 28 + Math.random() * 40,
+      r: 10 + Math.random() * 30,
+      g: 10 + Math.random() * 20,
+      b: 10 + Math.random() * 20,
     }
 
     const particles = particlesRef.current
@@ -257,8 +257,7 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     nextWord(words[0], canvas)
 
     const animate = () => {
-      ctx.fillStyle = "rgba(10, 10, 10, 0.12)"
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       const particles = particlesRef.current
 
