@@ -63,7 +63,7 @@ const AvistaoCardSection = () => {
       <div className="container relative">
         {/* Header */}
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-secondary font-display font-bold text-xs tracking-widest uppercase">
               <CreditCard size={14} />
               Avistão Card
@@ -79,7 +79,7 @@ const AvistaoCardSection = () => {
         </AnimateOnScroll>
 
         {/* Card showcase — free floating, no borders */}
-        <div className="container-narrow mb-16 md:mb-20">
+        <div className="container-narrow mb-18 md:mb-24">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:px-0">
             <AnimateOnScroll delay={50} className="w-full md:w-2/5 shrink-0 flex justify-center">
               <img
@@ -104,10 +104,10 @@ const AvistaoCardSection = () => {
         </div>
 
         {/* Feature cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 container-wide mb-16 md:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 container-wide mb-18 md:mb-28">
           {features.map((f, i) => (
             <AnimateOnScroll key={f.title} delay={i * 80}>
-              <div className="bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-6 md:p-7 space-y-4 hover:border-secondary/20 hover:-translate-y-1 transition-all duration-500 h-full">
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-7 md:p-8 space-y-5 hover:border-secondary/20 hover:-translate-y-1 transition-all duration-500 h-full">
                 <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center">
                   <f.icon size={22} className="text-secondary" />
                 </div>
@@ -120,7 +120,7 @@ const AvistaoCardSection = () => {
 
         {/* Steps - How to get the card */}
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-4 mb-12 md:mb-16">
+          <div className="container-narrow text-center space-y-5 mb-14 md:mb-18">
             <h3 className="heading-lg">
               Como o cliente pode solicitar o{" "}
               <span className="text-gradient">Avistão Card</span>
@@ -131,10 +131,10 @@ const AvistaoCardSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="container-narrow space-y-4 md:space-y-5">
+        <div className="container-narrow space-y-5 md:space-y-6">
           {steps.map((step, i) => (
             <AnimateOnScroll key={step.title} delay={i * 80}>
-              <div className="flex items-start gap-5 md:gap-6 bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-5 md:p-7 hover:border-secondary/20 transition-all duration-500">
+              <div className="flex items-start gap-5 md:gap-7 bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-8 hover:border-secondary/20 transition-all duration-500">
                 <div className="relative shrink-0">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">
                     <step.icon size={22} className="text-secondary" />

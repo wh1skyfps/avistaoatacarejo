@@ -30,7 +30,7 @@ const SolutionSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
       <div className="container relative">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
               <Sparkles size={14} />
               A solução
@@ -46,10 +46,10 @@ const SolutionSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-4xl mx-auto">
           {blocks.map((b, i) => (
             <AnimateOnScroll key={b.title} delay={i * 100}>
-              <div className="card-premium p-6 md:p-8 space-y-5 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
+              <div className="card-premium p-7 md:p-9 space-y-6 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
                 <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary">
                   <b.icon size={26} strokeWidth={1.5} />
                 </div>

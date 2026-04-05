@@ -44,7 +44,7 @@ const StoryboardSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.02),transparent_70%)]" />
       <div className="container relative">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <p className="text-xs md:text-sm font-display font-bold text-primary tracking-widest uppercase">
               Jornada do Cliente
             </p>
@@ -64,7 +64,7 @@ const StoryboardSection = () => {
             const isEven = i % 2 === 1;
             return (
               <AnimateOnScroll key={step.num} delay={i * 80}>
-                <div className={`flex flex-col ${isEven ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-6 md:gap-10 mb-8 md:mb-14`}>
+                <div className={`flex flex-col ${isEven ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-8 md:gap-14 mb-10 md:mb-18`}>
                   {/* Image */}
                   <div className="w-full md:w-1/2 shrink-0">
                     <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl shadow-foreground/5 group">

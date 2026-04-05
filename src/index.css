@@ -109,7 +109,20 @@
   }
 
   .section-spacing {
-    @apply py-24 md:py-32 lg:py-40;
+    @apply py-28 md:py-40 lg:py-52;
+  }
+
+  .section-divider {
+    @apply w-full flex items-center justify-center py-0;
+  }
+
+  .section-divider::before {
+    content: '';
+    @apply block w-16 md:w-24 h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+
+  .section-divider-dark::before {
+    @apply via-white/10;
   }
 
   .heading-xl {

@@ -35,7 +35,7 @@ const TaxComparisonSection = () => {
     <section className="section-spacing section-dark">
       <div className="container">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-loss font-display font-bold text-xs tracking-widest uppercase">
               <AlertTriangle size={14} />
               Atenção
@@ -53,7 +53,7 @@ const TaxComparisonSection = () => {
 
         {/* Tax breakdown */}
         <AnimateOnScroll delay={50}>
-          <div className="container-narrow mb-12 md:mb-16">
+          <div className="container-narrow mb-14 md:mb-20">
             <h3 className="text-center text-sm md:text-base font-display font-bold text-dark-foreground/60 mb-6 uppercase tracking-wider">
               Como o iFood cobra do seu negócio
             </h3>
@@ -72,7 +72,7 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={80}>
-          <div className="container-narrow mb-12 md:mb-16 p-6 md:p-10 overflow-hidden">
+          <div className="container-narrow mb-14 md:mb-20 p-8 md:p-12 overflow-hidden">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
               <motion.div
                 className="w-full md:w-1/2 shrink-0"
@@ -105,7 +105,7 @@ const TaxComparisonSection = () => {
 
         {/* Loss scenarios */}
         <AnimateOnScroll delay={100}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 container-narrow mb-10 md:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6 container-narrow mb-12 md:mb-20">
             {scenarios.map((s) => (
               <div
                 key={s.revenue}
@@ -134,14 +134,14 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={200}>
-          <p className="text-center text-base md:text-lg font-display font-bold text-primary mb-12 md:mb-16 px-4">
+          <p className="text-center text-base md:text-lg font-display font-bold text-primary mb-14 md:mb-20 px-4">
             Em poucos meses, esse valor pode ser <span className="underline decoration-primary/40 decoration-2 underline-offset-4">muito maior</span> do que o investimento em um app próprio.
           </p>
         </AnimateOnScroll>
 
         {/* Comparison */}
         <AnimateOnScroll delay={300}>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6 container-narrow">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-8 container-narrow">
             {/* Third party */}
             <div className="bg-white/[0.03] border border-loss/15 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5">
               <div className="flex items-center gap-3">

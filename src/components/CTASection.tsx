@@ -11,7 +11,7 @@ const CTASection = () => {
 
       <div className="container relative z-10">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-6 md:space-y-8">
+          <div className="container-narrow text-center space-y-7 md:space-y-10">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
               <Sparkles size={14} />
               Próximo passo
@@ -25,7 +25,7 @@ const CTASection = () => {
               proteger margem e fortalecer a marca.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center pt-6 md:pt-8">
               <a
                 href="#solucao"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 md:py-5 rounded-2xl bg-primary text-primary-foreground font-display font-bold text-base md:text-lg hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/35 hover:-translate-y-0.5 animate-pulse-glow active:scale-[0.98]"

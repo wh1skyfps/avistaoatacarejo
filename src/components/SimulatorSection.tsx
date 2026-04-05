@@ -13,7 +13,7 @@ const SimulatorSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
       <div className="container relative">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
               <Calculator size={14} />
               Simulação de Economia
@@ -25,10 +25,10 @@ const SimulatorSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-7 max-w-4xl mx-auto">
           {scenarios.map((s, i) => (
             <AnimateOnScroll key={s.revenue} delay={i * 100}>
-              <div className={`card-premium p-6 md:p-8 space-y-5 text-center hover:-translate-y-1 ${
+              <div className={`card-premium p-7 md:p-9 space-y-6 text-center hover:-translate-y-1 ${
                 s.featured ? "border-primary/25 shadow-lg shadow-primary/5 md:scale-105" : "hover:border-primary/20"
               }`}>
                 <div>
@@ -55,7 +55,7 @@ const SimulatorSection = () => {
         </div>
 
         <AnimateOnScroll delay={300}>
-          <p className="text-center text-muted-foreground mt-10 max-w-lg mx-auto text-sm md:text-base">
+          <p className="text-center text-muted-foreground mt-12 max-w-lg mx-auto text-sm md:text-base">
             Esse valor poderia estar no caixa do Avistão. Com um app próprio, 
             <span className="text-primary font-bold"> 100% do faturamento fica com você.</span>
           </p>
