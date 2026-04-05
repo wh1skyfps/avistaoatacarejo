@@ -33,7 +33,7 @@ const PainSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-4xl mx-auto">
           {pains.map((p, i) => (
             <AnimateOnScroll key={p.text} delay={i * 80}>
-              <div className="group card-premium p-5 md:p-7 space-y-4 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
+              <div className="group card-premium p-6 md:p-8 space-y-5 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
                 <div className="w-12 h-12 rounded-2xl bg-loss/8 flex items-center justify-center text-loss group-hover:bg-primary/10 group-hover:text-primary transition-all duration-500">
                   <p.icon size={22} strokeWidth={1.5} />
                 </div>
