@@ -1,6 +1,5 @@
 import { ShoppingCart, CreditCard, LayoutDashboard, Palette, Sparkles } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const blocks = [
   {
