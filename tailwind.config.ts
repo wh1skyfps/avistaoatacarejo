@@ -110,8 +110,12 @@ export default {
           "100%": { transform: "scale(1)", opacity: "1" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translateY(0) rotate(-2deg)" },
+          "50%": { transform: "translateY(-10px) rotate(-2deg)" },
+        },
+        "float-gentle": {
+          "0%, 100%": { transform: "translateY(0) rotate(-2deg)" },
+          "50%": { transform: "translateY(-6px) rotate(-1deg)" },
         },
         "pulse-glow": {
           "0%, 100%": { boxShadow: "0 0 20px hsl(0 72% 46% / 0.3)" },
