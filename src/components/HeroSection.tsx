@@ -32,8 +32,8 @@ const HeroSection = () => {
 
             <AnimateOnScroll delay={200}>
               <p className="text-[15px] md:text-lg text-dark-foreground/60 max-w-xl leading-relaxed">
-                Transforme o Avistão Supermercados em um delivery digital próprio, profissional e 
-                lucrativo — com app, pedidos online, pagamento e painel de controle.
+                Uma plataforma completa para vendas, delivery, cartão próprio e gestão multilojas — 
+                sem depender de terceiros, sem comissões e com a marca do Avistão.
               </p>
             </AnimateOnScroll>
 
