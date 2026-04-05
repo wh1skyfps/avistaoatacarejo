@@ -134,7 +134,7 @@ export default {
         "fade-in-right": "fade-in-right 0.6s ease-out forwards",
         "scale-in": "scale-in 0.4s ease-out forwards",
         "float": "float 3s ease-in-out infinite",
-        "float-gentle": "float-gentle 5s ease-in-out infinite",
+        "float-gentle": "float-gentle 8s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         "count-up": "count-up 0.5s ease-out forwards",
       },
