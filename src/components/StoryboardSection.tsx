@@ -54,7 +54,7 @@ const StoryboardSection = () => {
               Como seria a experiência do seu cliente{" "}
               <span className="text-gradient">com o app</span>
             </h2>
-            <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
+            <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
               Da escolha dos produtos até a entrega em casa, tudo pensado para facilitar a compra 
               e aumentar a frequência dos pedidos.
             </p>
