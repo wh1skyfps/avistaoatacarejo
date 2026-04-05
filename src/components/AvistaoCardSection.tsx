@@ -79,7 +79,7 @@ const AvistaoCardSection = () => {
         </AnimateOnScroll>
 
         {/* Card showcase — free floating, no borders */}
-        <div className="container-narrow mb-16 md:mb-20">
+        <div className="container-narrow mb-18 md:mb-24">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:px-0">
             <AnimateOnScroll delay={50} className="w-full md:w-2/5 shrink-0 flex justify-center">
               <img
