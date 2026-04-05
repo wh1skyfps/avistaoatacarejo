@@ -7,7 +7,7 @@ import PainSection from "@/components/PainSection";
 import TaxComparisonSection from "@/components/TaxComparisonSection";
 import UrgencySection from "@/components/UrgencySection";
 import SolutionSection from "@/components/SolutionSection";
-import CustomerFlowSection from "@/components/CustomerFlowSection";
+
 import StoryboardSection from "@/components/StoryboardSection";
 import AvistaoCardSection from "@/components/AvistaoCardSection";
 import MultiBranchSection from "@/components/MultiBranchSection";
@@ -47,7 +47,7 @@ const Index = () => {
       <TaxComparisonSection />
       <UrgencySection />
       <SolutionSection />
-      <CustomerFlowSection />
+      <StoryboardSection />
       <StoryboardSection />
       <AvistaoCardSection />
       <MultiBranchSection />

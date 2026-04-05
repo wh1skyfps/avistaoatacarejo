@@ -40,7 +40,7 @@ const steps = [
 
 const StoryboardSection = () => {
   return (
-    <section className="section-spacing bg-background relative overflow-hidden">
+    <section className="section-spacing section-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.02),transparent_70%)]" />
       <div className="container relative">
         <AnimateOnScroll>
@@ -48,11 +48,11 @@ const StoryboardSection = () => {
             <p className="text-xs md:text-sm font-display font-bold text-primary tracking-widest uppercase">
               Jornada do Cliente
             </p>
-            <h2 className="heading-xl text-foreground">
+            <h2 className="heading-xl text-dark-foreground">
               Como seria a experiência do seu cliente{" "}
               <span className="text-gradient">com o app</span>
             </h2>
-            <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
               Da escolha dos produtos até a entrega em casa, tudo pensado para facilitar a compra 
               e aumentar a frequência dos pedidos.
             </p>
@@ -81,7 +81,7 @@ const StoryboardSection = () => {
                         <span className="text-primary-foreground font-display font-black text-sm md:text-base">{step.num}</span>
                       </div>
                       {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                     </div>
                   </div>
 
@@ -92,10 +92,10 @@ const StoryboardSection = () => {
                       <div className="w-8 h-px bg-primary/30" />
                       <span className="text-[10px] font-display font-bold text-primary tracking-[0.2em] uppercase">Passo {step.num}</span>
                     </div>
-                    <h3 className="text-lg md:text-2xl font-display font-bold text-foreground leading-snug">
+                    <h3 className="text-lg md:text-2xl font-display font-bold text-dark-foreground leading-snug">
                       {step.title}
                     </h3>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-md mx-auto md:mx-0">
+                    <p className="text-sm md:text-base text-dark-foreground/50 leading-relaxed max-w-md mx-auto md:mx-0">
                       {step.text}
                     </p>
                   </div>
@@ -107,9 +107,9 @@ const StoryboardSection = () => {
 
         <AnimateOnScroll delay={300}>
           <div className="text-center mt-8 md:mt-12">
-            <div className="inline-block bg-card border rounded-2xl px-8 py-5 shadow-sm">
-              <p className="font-display font-bold text-base md:text-lg text-foreground">
-                Simples para o cliente. <span className="text-primary">Lucrativo para o mercado.</span>
+             <div className="inline-block bg-white/[0.04] border border-white/10 rounded-2xl px-8 py-5">
+               <p className="font-display font-bold text-base md:text-lg text-dark-foreground">
+                 Simples para o cliente. <span className="text-primary">Lucrativo para o mercado.</span>
               </p>
             </div>
           </div>
