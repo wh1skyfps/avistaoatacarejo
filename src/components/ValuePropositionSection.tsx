@@ -1,6 +1,5 @@
 import { Check, Star, Shield } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const items = [
   "App próprio com catálogo de produtos, carrinho, checkout e pagamento",
