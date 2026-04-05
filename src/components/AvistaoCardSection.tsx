@@ -78,32 +78,30 @@ const AvistaoCardSection = () => {
           </div>
         </AnimateOnScroll>
 
-        {/* Card showcase */}
-        <AnimateOnScroll delay={50}>
-          <div className="container-narrow mb-16 md:mb-20">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white/[0.03] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-10 overflow-hidden">
-              <div className="w-full md:w-2/5 shrink-0 flex justify-center">
-                <img
-                  src={avistaoCardImg}
-                  alt="Avistão Card / Tricard"
-                  className="w-48 md:w-56 rounded-2xl shadow-2xl shadow-secondary/20 animate-float"
-                />
-              </div>
-              <div className="space-y-4 text-center md:text-left">
-                <h3 className="text-xl md:text-2xl font-display font-black leading-tight">
-                  Conveniência + crédito próprio +{" "}
-                  <span className="text-secondary">relacionamento</span>
-                </h3>
-                <p className="text-dark-foreground/50 text-sm md:text-base leading-relaxed">
-                  O app pode se tornar um canal inteligente para aumentar o uso, a adesão e a valorização do Avistão Card — unindo praticidade digital com o cartão da rede.
-                </p>
-                <p className="text-dark-foreground/40 text-xs md:text-sm">
-                  Mais recorrência de compra. Mais fidelização. <span className="text-secondary font-bold">Mais valor para a marca.</span>
-                </p>
-              </div>
-            </div>
+        {/* Card showcase — free floating, no borders */}
+        <div className="container-narrow mb-16 md:mb-20">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:px-0">
+            <AnimateOnScroll delay={50} className="w-full md:w-2/5 shrink-0 flex justify-center">
+              <img
+                src={avistaoCardImg}
+                alt="Avistão Card / Tricard"
+                className="w-52 md:w-64 drop-shadow-[0_20px_40px_rgba(200,160,0,0.25)] animate-float hover:scale-105 transition-transform duration-700"
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={150} className="space-y-4 text-center md:text-left">
+              <h3 className="text-xl md:text-2xl font-display font-black leading-tight">
+                Conveniência + crédito próprio +{" "}
+                <span className="text-secondary">relacionamento</span>
+              </h3>
+              <p className="text-dark-foreground/50 text-sm md:text-base leading-relaxed">
+                O app pode se tornar um canal inteligente para aumentar o uso, a adesão e a valorização do Avistão Card — unindo praticidade digital com o cartão da rede.
+              </p>
+              <p className="text-dark-foreground/40 text-xs md:text-sm">
+                Mais recorrência de compra. Mais fidelização. <span className="text-secondary font-bold">Mais valor para a marca.</span>
+              </p>
+            </AnimateOnScroll>
           </div>
-        </AnimateOnScroll>
+        </div>
 
         {/* Feature cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 container-wide mb-16 md:mb-24">
