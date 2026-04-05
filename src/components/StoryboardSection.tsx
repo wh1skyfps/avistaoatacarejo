@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 
 import story1 from "@/assets/story-1-casa.jpg";
 import story2 from "@/assets/story-2-app.jpg";
@@ -43,6 +44,7 @@ const StoryboardSection = () => {
   return (
      <section className="section-spacing bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.03),transparent_70%)]" />
+      <FloatingPaths position={1} className="text-slate-950 opacity-25" />
       
       <div className="container relative">
         <AnimateOnScroll>
