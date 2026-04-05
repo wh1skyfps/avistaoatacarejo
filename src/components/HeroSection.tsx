@@ -86,7 +86,7 @@ const HeroSection = () => {
             className="flex-shrink-0 relative"
             initial={{ opacity: 0, y: 40, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.45 }}
+            transition={{ duration: 0.9, ease: ease as unknown as [number, number, number, number], delay: 0.45 }}
           >
             <div className="relative w-[300px] sm:w-[340px] lg:w-[400px]">
               {/* Glow */}
