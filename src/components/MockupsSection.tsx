@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { BeamsBackground } from "./ui/beams-background";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 
 const MockupsSection = () => {
