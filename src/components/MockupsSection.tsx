@@ -1,5 +1,4 @@
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 
 const MockupsSection = () => {
