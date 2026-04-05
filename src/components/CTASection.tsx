@@ -14,25 +14,15 @@ const CTASection = () => {
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
-            <div className="w-full max-w-4xl rounded-[2rem] border border-border/70 bg-card/95 px-4 py-5 shadow-2xl backdrop-blur-sm md:px-8 md:py-8">
-              <ParticleTextEffect words={["OBRIGADO!", "AVISTÃO", "MOWIN"]} />
-            </div>
+            <ParticleTextEffect words={["OBRIGADO!", "AVISTÃO", "MOWIN", "❤️"]} />
 
             <div className="flex items-center gap-4 md:gap-6">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden ring-2 ring-white/10 shadow-2xl">
-                <img
-                  src={avistaoLogo}
-                  alt="Avistão Supermercados"
-                  className="w-full h-full object-cover"
-                />
+                <img src={avistaoLogo} alt="Avistão Supermercados" className="w-full h-full object-cover" />
               </div>
               <span className="text-white/40 font-display font-bold text-xl md:text-2xl">×</span>
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden ring-2 ring-white/10 shadow-2xl">
-                <img
-                  src={mowinLogo}
-                  alt="Mowin"
-                  className="w-full h-full object-cover"
-                />
+                <img src={mowinLogo} alt="Mowin" className="w-full h-full object-cover" />
               </div>
             </div>
 
