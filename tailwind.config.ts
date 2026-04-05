@@ -110,8 +110,8 @@ export default {
           "100%": { transform: "scale(1)", opacity: "1" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0) rotate(-2deg)" },
-          "50%": { transform: "translateY(-10px) rotate(-2deg)" },
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
         "float-gentle": {
           "0%, 100%": { transform: "translateY(0) rotate(-2deg)" },
