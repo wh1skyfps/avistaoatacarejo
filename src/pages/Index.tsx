@@ -42,7 +42,7 @@ const Index = () => {
         🚀 Proposta exclusiva para o Avistão Supermercados — Válida por tempo limitado!
       </Banner>
       {/* Hero (dark) */}
-      <HeroSection />
+      <HeroSection introComplete={introComplete} />
       {/* 1. Pain (light) */}
       <div className="section-divider" />
       <PainSection />

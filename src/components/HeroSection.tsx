@@ -7,13 +7,7 @@ import { TextEffect } from "./ui/text-effect";
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
-const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 30, filter: "blur(10px)" },
-  animate: { opacity: 1, y: 0, filter: "blur(0px)" },
-  transition: { duration: 0.9, ease, delay },
-});
-
-const HeroSection = () => {
+const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => {
   const isMobile = useIsMobile();
 
   return (
@@ -38,21 +32,20 @@ const HeroSection = () => {
 
           {/* Text Content — left side */}
           <div className="flex-1 max-w-lg text-center lg:text-left lg:max-w-xl">
-            <motion.div {...fadeUp(0.15)}>
-              <span className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-dark-foreground/40">
-                <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
-                <TextEffect per="char" preset="blur" delay={0.3}>
-                  Proposta exclusiva · Avistão Supermercados
-                </TextEffect>
-              </span>
-            </motion.div>
+            <span className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-dark-foreground/40">
+              <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
+              <TextEffect per="char" preset="blur" delay={0.3} trigger={introComplete}>
+                Proposta exclusiva · Avistão Supermercados
+              </TextEffect>
+            </span>
 
             <div className="mt-8">
               <TextEffect
                 per="word"
                 as="h1"
                 preset="blur"
-                delay={0.5}
+                delay={0.6}
+                trigger={introComplete}
                 className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
               >
                 Sua rede merece uma plataforma digital própria
@@ -64,7 +57,8 @@ const HeroSection = () => {
                 per="word"
                 as="p"
                 preset="slide"
-                delay={1.0}
+                delay={1.2}
+                trigger={introComplete}
                 className="max-w-xl text-balance text-[0.95rem] sm:text-[1.05rem] text-dark-foreground/45 leading-[1.7] tracking-[-0.01em]"
               >
                 Vendas, delivery, cartão fidelidade e gestão multilojas — sem comissões, sem intermediários, 100% com a marca Avistão.
@@ -77,7 +71,7 @@ const HeroSection = () => {
           <motion.div
             className="relative flex-shrink-0 flex items-end justify-center"
             initial={{ opacity: 0, y: 60, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
+            animate={introComplete ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 60, scale: 0.9 }}
             transition={{ duration: 1.1, ease, delay: 0.5 }}
           >
             {/* Glow */}
