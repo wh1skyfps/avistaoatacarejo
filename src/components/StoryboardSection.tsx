@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { BeamsBackground } from "./ui/beams-background";
 import story1 from "@/assets/story-1-casa.jpg";
 import story2 from "@/assets/story-2-app.jpg";
 import story3 from "@/assets/story-3-carrinho.jpg";
@@ -42,6 +43,7 @@ const StoryboardSection = () => {
   return (
     <section className="section-spacing section-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(0_72%_46%_/_0.02),transparent_70%)]" />
+      <BeamsBackground beamCount={6} />
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
