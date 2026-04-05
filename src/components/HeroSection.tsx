@@ -27,7 +27,7 @@ const HeroSection = () => {
           muted
           playsInline
           className="size-full object-cover opacity-30 dark:opacity-40"
-          src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"
+          src="/videos/hero-bg.mp4"
         />
       </div>
 
