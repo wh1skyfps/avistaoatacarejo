@@ -1,4 +1,5 @@
 import avistaoLogo from "@/assets/avistao-logo.jpg";
+import mowinLogo from "@/assets/mowin-logo.jpg";
 import AnimateOnScroll from "./AnimateOnScroll";
 import { ParticleTextEffect } from "./ui/particle-text-effect";
 
