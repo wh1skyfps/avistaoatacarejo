@@ -39,18 +39,28 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
               </TextEffect>
             </span>
 
-            <div className="mt-8">
+            <h1 className="mt-8 text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05]">
               <TextEffect
                 per="word"
-                as="h1"
+                as="span"
                 preset="slide"
                 delay={0.6}
                 trigger={introComplete}
-                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
+                className="text-dark-foreground"
               >
-                Sua rede merece uma plataforma digital própria
+                {"Sua rede merece uma "}
               </TextEffect>
-            </div>
+              <TextEffect
+                per="word"
+                as="span"
+                preset="slide"
+                delay={0.9}
+                trigger={introComplete}
+                className="text-primary"
+              >
+                plataforma digital própria
+              </TextEffect>
+            </h1>
 
             <div className="mt-7">
               <TextEffect
