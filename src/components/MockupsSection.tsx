@@ -15,7 +15,7 @@ const MockupsSection = () => {
         </AnimateOnScroll>
 
         {/* Mobile: Stack vertically, Desktop: horizontal */}
-        <div className="flex flex-col items-center gap-10 lg:flex-row lg:justify-center lg:gap-8 container-wide">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:justify-center lg:gap-10 container-wide">
           {/* Phone 1 - App */}
           <AnimateOnScroll delay={0}>
             <div className="w-[200px] md:w-[220px]">

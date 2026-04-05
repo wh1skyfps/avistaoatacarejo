@@ -64,7 +64,7 @@ const StoryboardSection = () => {
             const isEven = i % 2 === 1;
             return (
               <AnimateOnScroll key={step.num} delay={i * 80}>
-                <div className={`flex flex-col ${isEven ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-6 md:gap-10 mb-8 md:mb-14`}>
+                <div className={`flex flex-col ${isEven ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-8 md:gap-14 mb-10 md:mb-18`}>
                   {/* Image */}
                   <div className="w-full md:w-1/2 shrink-0">
                     <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl shadow-foreground/5 group">

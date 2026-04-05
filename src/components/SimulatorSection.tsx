@@ -55,7 +55,7 @@ const SimulatorSection = () => {
         </div>
 
         <AnimateOnScroll delay={300}>
-          <p className="text-center text-muted-foreground mt-10 max-w-lg mx-auto text-sm md:text-base">
+          <p className="text-center text-muted-foreground mt-12 max-w-lg mx-auto text-sm md:text-base">
             Esse valor poderia estar no caixa do Avistão. Com um app próprio, 
             <span className="text-primary font-bold"> 100% do faturamento fica com você.</span>
           </p>

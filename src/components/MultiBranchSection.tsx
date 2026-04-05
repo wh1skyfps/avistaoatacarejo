@@ -128,7 +128,7 @@ const MultiBranchSection = () => {
         </div>
 
         <AnimateOnScroll delay={400}>
-          <p className="text-center text-base md:text-lg font-display font-bold text-primary mt-10 md:mt-14 px-4">
+          <p className="text-center text-base md:text-lg font-display font-bold text-primary mt-12 md:mt-16 px-4">
             Isso não é um app simples. É uma <span className="underline decoration-primary/40 decoration-2 underline-offset-4">estrutura digital forte</span> para toda a rede.
           </p>
         </AnimateOnScroll>

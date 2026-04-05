@@ -134,7 +134,7 @@ const AvistaoCardSection = () => {
         <div className="container-narrow space-y-5 md:space-y-6">
           {steps.map((step, i) => (
             <AnimateOnScroll key={step.title} delay={i * 80}>
-              <div className="flex items-start gap-5 md:gap-6 bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-5 md:p-7 hover:border-secondary/20 transition-all duration-500">
+              <div className="flex items-start gap-5 md:gap-7 bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-8 hover:border-secondary/20 transition-all duration-500">
                 <div className="relative shrink-0">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">
                     <step.icon size={22} className="text-secondary" />

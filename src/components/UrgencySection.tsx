@@ -30,7 +30,7 @@ const UrgencySection = () => {
             { icon: Zap, text: "A oportunidade está aberta agora", sub: "Quem se posicionar primeiro conquista a preferência" },
           ].map((item, i) => (
             <AnimateOnScroll key={item.text} delay={i * 120}>
-              <div className="card-premium p-6 md:p-7 space-y-4 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full text-center md:text-left">
+              <div className="card-premium p-7 md:p-8 space-y-5 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full text-center md:text-left">
                 <div className="w-12 h-12 rounded-2xl bg-primary/8 flex items-center justify-center text-primary mx-auto md:mx-0">
                   <item.icon size={22} strokeWidth={1.5} />
                 </div>

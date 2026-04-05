@@ -141,7 +141,7 @@ const TaxComparisonSection = () => {
 
         {/* Comparison */}
         <AnimateOnScroll delay={300}>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6 container-narrow">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-8 container-narrow">
             {/* Third party */}
             <div className="bg-white/[0.03] border border-loss/15 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5">
               <div className="flex items-center gap-3">
