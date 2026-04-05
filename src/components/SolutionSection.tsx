@@ -53,7 +53,7 @@ const SolutionSection = () => {
                 <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary">
                   <b.icon size={26} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg md:text-xl font-display font-bold text-foreground">{b.title}</h3>
+                <h3 className="text-lg md:text-xl font-display font-bold text-dark-foreground">{b.title}</h3>
                 <ul className="space-y-2.5">
                   {b.items.map((item) => (
                     <li key={item} className="flex items-center gap-3 text-muted-foreground text-[15px]">
