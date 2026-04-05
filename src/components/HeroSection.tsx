@@ -1,9 +1,9 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import heroPhoneMockup from "@/assets/hero-phone-mockup.png";
 import heroLaptopMockup from "@/assets/hero-laptop-mockup.png";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { TextEffect } from "./ui/text-effect";
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
@@ -41,26 +41,35 @@ const HeroSection = () => {
             <motion.div {...fadeUp(0.15)}>
               <span className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-dark-foreground/40">
                 <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
-                Proposta exclusiva · Avistão Supermercados
+                <TextEffect per="char" preset="blur" delay={0.3}>
+                  Proposta exclusiva · Avistão Supermercados
+                </TextEffect>
               </span>
             </motion.div>
 
-            <motion.h1
-              {...fadeUp(0.3)}
-              className="mt-8 text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
-            >
-              Sua rede merece uma{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                plataforma digital própria
-              </span>
-            </motion.h1>
+            <div className="mt-8">
+              <TextEffect
+                per="word"
+                as="h1"
+                preset="blur"
+                delay={0.5}
+                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
+              >
+                Sua rede merece uma plataforma digital própria
+              </TextEffect>
+            </div>
 
-            <motion.p
-              {...fadeUp(0.45)}
-              className="mt-7 max-w-xl text-balance text-[0.95rem] sm:text-[1.05rem] text-dark-foreground/45 leading-[1.7] tracking-[-0.01em]"
-            >
-              Vendas, delivery, cartão fidelidade e gestão multilojas — sem comissões, sem intermediários, 100% com a marca Avistão.
-            </motion.p>
+            <div className="mt-7">
+              <TextEffect
+                per="word"
+                as="p"
+                preset="slide"
+                delay={1.0}
+                className="max-w-xl text-balance text-[0.95rem] sm:text-[1.05rem] text-dark-foreground/45 leading-[1.7] tracking-[-0.01em]"
+              >
+                Vendas, delivery, cartão fidelidade e gestão multilojas — sem comissões, sem intermediários, 100% com a marca Avistão.
+              </TextEffect>
+            </div>
 
           </div>
 
