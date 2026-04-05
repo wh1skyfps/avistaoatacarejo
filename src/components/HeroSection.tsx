@@ -25,8 +25,8 @@ const HeroSection = () => {
 
             <AnimateOnScroll delay={100}>
               <h1 className="text-[1.65rem] leading-[1.15] md:text-[2.5rem] lg:text-[3.25rem] font-display font-black tracking-tight">
-                Seu supermercado pode vender mais todos os dias,{" "}
-                <span className="text-gradient">sem depender de iFood ou WhatsApp bagunçado</span>
+                Sua rede merece uma plataforma digital própria{" "}
+                <span className="text-gradient">para vender, fidelizar e crescer</span>
               </h1>
             </AnimateOnScroll>
 
