@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import heroPhoneMockup from "@/assets/hero-phone-mockup.png";
 import heroLaptopMockup from "@/assets/hero-laptop-mockup.png";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const ease = [0.22, 1, 0.36, 1] as unknown as [number, number, number, number];
 
