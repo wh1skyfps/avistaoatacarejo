@@ -45,7 +45,7 @@ const MultiBranchSection = () => {
         </AnimateOnScroll>
 
         {/* Two sides: client + operation */}
-        <div className="grid md:grid-cols-2 gap-5 md:gap-6 container-wide mb-14 md:mb-20">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 container-wide mb-16 md:mb-24">
           {/* Client side */}
           <AnimateOnScroll delay={50}>
             <div className="card-premium p-6 md:p-8 space-y-6 h-full">
