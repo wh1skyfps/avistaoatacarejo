@@ -16,7 +16,7 @@ const PainSection = () => {
       <div className="container relative">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
-            <p className="text-xs md:text-sm font-display font-bold text-primary tracking-widest uppercase">
+            <p className="section-label text-primary tracking-widest uppercase">
               O problema
             </p>
             <h2 className="heading-xl text-foreground">
