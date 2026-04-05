@@ -35,7 +35,7 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
           <div className="flex-1 max-w-lg text-center lg:text-left lg:max-w-xl">
             <div className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-1.5">
               <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
-              <AnimatedShinyText className="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase !text-red-500">
+              <AnimatedShinyText className="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-primary">
                 🚀 Proposta exclusiva · Avistão Supermercados
               </AnimatedShinyText>
             </div>
