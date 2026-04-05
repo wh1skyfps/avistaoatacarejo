@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=General+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -64,9 +65,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv11', 'ss01';
+    text-rendering: optimizeLegibility;
   }
 
   html {
@@ -74,8 +77,9 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', system-ui, sans-serif;
-    letter-spacing: -0.02em;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    letter-spacing: -0.035em;
+    font-feature-settings: 'ss01';
   }
 }
 
@@ -95,23 +99,29 @@
   }
 
   .card-premium {
-    @apply bg-card border rounded-2xl md:rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500;
+    @apply bg-card border rounded-2xl md:rounded-3xl shadow-sm transition-all duration-500;
+    will-change: transform, box-shadow;
+  }
+
+  .card-premium:hover {
+    @apply shadow-xl -translate-y-1;
+    box-shadow: 0 20px 40px -12px hsl(0 0% 0% / 0.08), 0 0 0 1px hsl(var(--primary) / 0.06);
   }
 
   .section-spacing {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply py-24 md:py-32 lg:py-40;
   }
 
   .heading-xl {
-    @apply text-[1.75rem] leading-[1.15] md:text-4xl lg:text-5xl font-display font-black tracking-tight;
+    @apply text-[1.85rem] leading-[1.08] md:text-[2.5rem] lg:text-[3.25rem] font-display font-bold tracking-tighter;
   }
 
   .heading-lg {
-    @apply text-2xl md:text-3xl lg:text-4xl font-display font-black tracking-tight leading-tight;
+    @apply text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-display font-bold tracking-tighter leading-[1.1];
   }
 
   .body-lg {
-    @apply text-base md:text-lg leading-relaxed;
+    @apply text-[0.95rem] md:text-[1.1rem] leading-[1.7] tracking-[-0.01em];
   }
 
   .container-narrow {
@@ -120,5 +130,10 @@
 
   .container-wide {
     @apply max-w-5xl mx-auto;
+  }
+
+  /* Premium label style */
+  .section-label {
+    @apply text-[11px] md:text-xs font-display font-semibold tracking-[0.2em] uppercase;
   }
 }
