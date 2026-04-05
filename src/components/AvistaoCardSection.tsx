@@ -1,5 +1,6 @@
 import { CreditCard, Smartphone, Gift, UserPlus, Heart, FileText, Phone, Eye, ArrowRight } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { FloatingPaths } from "./ui/background-paths";
 import avistaoCardImg from "@/assets/avistao-card.png";
 
 const features = [
