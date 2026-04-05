@@ -26,7 +26,7 @@ const ValuePropositionSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={100}>
-          <div className="max-w-2xl mx-auto bg-card border rounded-2xl md:rounded-3xl p-8 md:p-12 space-y-8 shadow-lg shadow-primary/3 hover:shadow-xl hover:shadow-primary/5 transition-shadow duration-500">
+          <div className="max-w-2xl mx-auto bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-8 md:p-12 space-y-8">
             <div className="flex items-center gap-3.5">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
                 <Star size={22} className="text-primary" />
