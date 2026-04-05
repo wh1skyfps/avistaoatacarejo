@@ -6,7 +6,7 @@ const MockupsSection = () => {
     <section className="section-spacing section-dark overflow-hidden">
       <div className="container">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <h2 className="heading-xl">
               Como isso pode funcionar{" "}
               <span className="text-gradient">na prática</span>
