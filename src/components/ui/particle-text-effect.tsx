@@ -257,8 +257,7 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     nextWord(words[0], canvas)
 
     const animate = () => {
-      ctx.fillStyle = "rgba(10, 10, 10, 0.12)"
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       const particles = particlesRef.current
 
