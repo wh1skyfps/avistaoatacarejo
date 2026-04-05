@@ -46,7 +46,7 @@ const SolutionSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-4xl mx-auto">
           {blocks.map((b, i) => (
             <AnimateOnScroll key={b.title} delay={i * 100}>
               <div className="card-premium p-6 md:p-8 space-y-5 hover:border-primary/25 hover:shadow-primary/5 hover:-translate-y-1 h-full">
