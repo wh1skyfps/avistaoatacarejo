@@ -53,7 +53,7 @@ const TaxComparisonSection = () => {
 
         {/* Tax breakdown */}
         <AnimateOnScroll delay={50}>
-          <div className="container-narrow mb-12 md:mb-16">
+          <div className="container-narrow mb-14 md:mb-20">
             <h3 className="text-center text-sm md:text-base font-display font-bold text-dark-foreground/60 mb-6 uppercase tracking-wider">
               Como o iFood cobra do seu negócio
             </h3>
