@@ -195,9 +195,7 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     nextWord(words[0], canvas)
 
     const animate = () => {
-      // Motion blur trail on transparent bg
-      ctx.fillStyle = "rgba(0, 0, 0, 0.1)"
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       const particles = particlesRef.current
       for (let i = particles.length - 1; i >= 0; i--) {
