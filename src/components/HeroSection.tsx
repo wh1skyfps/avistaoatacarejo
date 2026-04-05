@@ -4,6 +4,7 @@ import heroPhoneMockup from "@/assets/hero-phone-mockup.png";
 import heroLaptopMockup from "@/assets/hero-laptop-mockup.png";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { TextEffect } from "./ui/text-effect";
+import { AnimatedShinyText } from "./ui/animated-shiny-text";
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
