@@ -13,7 +13,7 @@ const SimulatorSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(0_72%_46%_/_0.03),transparent_60%)]" />
       <div className="container relative">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
               <Calculator size={14} />
               Simulação de Economia
