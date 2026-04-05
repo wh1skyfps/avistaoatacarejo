@@ -1,4 +1,5 @@
 import { X, Check, TrendingDown, AlertTriangle, Percent } from "lucide-react";
+import { motion } from "framer-motion";
 import AnimateOnScroll from "./AnimateOnScroll";
 import dinheiroImg from "@/assets/dinheiro.png";
 
