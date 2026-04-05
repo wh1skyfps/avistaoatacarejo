@@ -34,33 +34,23 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
           <div className="flex-1 max-w-lg text-center lg:text-left lg:max-w-xl">
             <span className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-dark-foreground/40">
               <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
-              <TextEffect per="char" preset="blur" delay={0.3} trigger={introComplete}>
+              <TextEffect per="char" preset="fade" delay={0.3} trigger={introComplete}>
                 Proposta exclusiva · Avistão Supermercados
               </TextEffect>
             </span>
 
-            <h1 className="mt-8 text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05]">
+            <div className="mt-8">
               <TextEffect
                 per="word"
-                as="span"
-                preset="blur"
+                as="h1"
+                preset="slide"
                 delay={0.6}
                 trigger={introComplete}
-                className="text-dark-foreground"
+                className="text-balance text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] xl:text-[4rem] font-display font-bold tracking-[-0.04em] leading-[1.05] text-dark-foreground"
               >
-                Sua rede merece uma
-              </TextEffect>{" "}
-              <TextEffect
-                per="word"
-                as="span"
-                preset="blur"
-                delay={0.9}
-                trigger={introComplete}
-                className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent"
-              >
-                plataforma digital própria
+                Sua rede merece uma plataforma digital própria
               </TextEffect>
-            </h1>
+            </div>
 
             <div className="mt-7">
               <TextEffect
