@@ -1,6 +1,6 @@
 import { CreditCard, Smartphone, Gift, UserPlus, Heart, FileText, Phone, Eye, ArrowRight } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { BeamsBackground } from "./ui/beams-background";
+
 import avistaoCardImg from "@/assets/avistao-card.png";
 
 const features = [
