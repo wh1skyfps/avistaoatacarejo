@@ -25,15 +25,15 @@ const HeroSection = () => {
 
             <AnimateOnScroll delay={100}>
               <h1 className="text-[1.65rem] leading-[1.15] md:text-[2.5rem] lg:text-[3.25rem] font-display font-black tracking-tight">
-                Seu supermercado pode vender mais todos os dias,{" "}
-                <span className="text-gradient">sem depender de iFood ou WhatsApp bagunçado</span>
+                Sua rede merece uma plataforma digital própria{" "}
+                <span className="text-gradient">para vender, fidelizar e crescer</span>
               </h1>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={200}>
               <p className="text-[15px] md:text-lg text-dark-foreground/60 max-w-xl leading-relaxed">
-                Transforme o Avistão Supermercados em um delivery digital próprio, profissional e 
-                lucrativo — com app, pedidos online, pagamento e painel de controle.
+                Uma plataforma completa para vendas, delivery, cartão próprio e gestão multilojas — 
+                sem depender de terceiros, sem comissões e com a marca do Avistão.
               </p>
             </AnimateOnScroll>
 
@@ -59,7 +59,7 @@ const HeroSection = () => {
 
             <AnimateOnScroll delay={400}>
               <div className="flex flex-wrap gap-x-5 gap-y-2 pt-1">
-                {["App próprio", "Sem comissão por pedido", "Mais controle", "Mais lucro"].map((item) => (
+                {["App próprio", "Sem comissão", "Multilojas", "Avistão Card", "Mais lucro"].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-xs md:text-sm text-dark-foreground/40 font-medium">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                     {item}
