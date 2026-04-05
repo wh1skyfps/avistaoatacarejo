@@ -11,7 +11,7 @@ const CTASection = () => {
 
       <div className="container relative z-10">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-6 md:space-y-8">
+          <div className="container-narrow text-center space-y-7 md:space-y-10">
             <div className="inline-flex items-center gap-2 text-primary font-display font-bold text-xs tracking-widest uppercase">
               <Sparkles size={14} />
               Próximo passo
