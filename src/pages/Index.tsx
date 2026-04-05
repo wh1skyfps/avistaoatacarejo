@@ -47,6 +47,7 @@ const Index = () => {
       <MultiBranchSection />
       <ValuePropositionSection />
       <BusinessBenefitsSection />
+      <AppScreensSection />
       <MockupsSection />
       <SimulatorSection />
       <CTASection />
