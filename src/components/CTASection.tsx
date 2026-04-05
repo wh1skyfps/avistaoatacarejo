@@ -1,6 +1,6 @@
 import { MessageCircle, ArrowRight, Sparkles } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
+
 
 const CTASection = () => {
   return (
