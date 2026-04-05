@@ -25,13 +25,13 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="size-full object-cover opacity-30 dark:opacity-40"
+          className="size-full object-cover opacity-20"
           src={isMobile ? "/videos/hero-bg-mobile.mp4" : "/videos/hero-bg.mp4"}
         />
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 z-[1] bg-black/70" />
+      <div className="absolute inset-0 z-[1] bg-black/85" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 py-20 md:py-28 lg:py-36">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
