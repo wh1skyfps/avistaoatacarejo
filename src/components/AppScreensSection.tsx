@@ -6,6 +6,7 @@ import {
   Smartphone, FileText, Phone, Eye
 } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { BeamsBackground } from "./ui/beams-background";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import avistaoCardImg from "@/assets/avistao-card.png";
 
