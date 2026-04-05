@@ -1,6 +1,5 @@
 import { TrendingDown, Calculator } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const scenarios = [
   { revenue: "R$ 20 mil", tax: "27%", loss: "R$ 5.400", annual: "R$ 64.800" },
