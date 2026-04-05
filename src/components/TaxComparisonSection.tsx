@@ -1,7 +1,7 @@
 import { X, Check, TrendingDown, AlertTriangle, Percent } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
+
 import dinheiroImg from "@/assets/dinheiro.png";
 
 const taxBreakdown = [
@@ -34,7 +34,7 @@ const ownApp = [
 const TaxComparisonSection = () => {
   return (
     <section className="section-spacing section-dark relative overflow-hidden">
-      <div className="absolute inset-0 text-white opacity-20 overflow-hidden"><FloatingPaths position={1} /><FloatingPaths position={-1} /></div>
+      
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">

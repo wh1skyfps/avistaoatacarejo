@@ -1,6 +1,6 @@
 import { CreditCard, Smartphone, Gift, UserPlus, Heart, FileText, Phone, Eye, ArrowRight } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { BeamsBackground } from "./ui/beams-background";
+
 import avistaoCardImg from "@/assets/avistao-card.png";
 
 const features = [
@@ -60,7 +60,7 @@ const AvistaoCardSection = () => {
       {/* Subtle gold glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[160px]" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[140px]" />
-      <BeamsBackground beamCount={6} />
+      
 
       <div className="container relative">
         {/* Header */}
