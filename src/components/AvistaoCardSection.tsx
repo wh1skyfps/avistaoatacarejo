@@ -120,7 +120,7 @@ const AvistaoCardSection = () => {
 
         {/* Steps - How to get the card */}
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-4 mb-12 md:mb-16">
+          <div className="container-narrow text-center space-y-5 mb-14 md:mb-18">
             <h3 className="heading-lg">
               Como o cliente pode solicitar o{" "}
               <span className="text-gradient">Avistão Card</span>
