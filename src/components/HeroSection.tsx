@@ -1,19 +1,5 @@
-import { ArrowRight, MessageCircle, Zap, Target, ShoppingCart, Store, CreditCard, TrendingUp, Star } from "lucide-react";
+import { ArrowRight, MessageCircle, Zap, Star } from "lucide-react";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
-
-const StatItem = ({ value, label }: { value: string; label: string }) => (
-  <div className="flex flex-col items-center justify-center transition-transform hover:-translate-y-1 cursor-default">
-    <span className="text-xl font-bold text-white sm:text-2xl font-display">{value}</span>
-    <span className="text-[10px] uppercase tracking-wider text-zinc-400 font-medium sm:text-xs">{label}</span>
-  </div>
-);
-
-const FEATURES = [
-  { name: "Delivery próprio", icon: ShoppingCart },
-  { name: "Multilojas", icon: Store },
-  { name: "Avistão Card", icon: CreditCard },
-  { name: "Mais lucro", icon: TrendingUp },
-];
 
 const HeroSection = () => {
   return (
@@ -101,78 +87,82 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* RIGHT COLUMN */}
-          <div className="lg:col-span-5 space-y-5 lg:mt-8">
-
-            {/* Stats Card */}
-            <div className="hero-fade-in hero-delay-5 relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-xl shadow-2xl">
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 h-64 w-64 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 ring-1 ring-primary/25">
-                    <Target className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-3xl font-black tracking-tight text-white font-display">App Avistão</div>
-                    <div className="text-sm text-zinc-400">Plataforma Digital Completa</div>
-                  </div>
-                </div>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-zinc-400">Economia vs iFood</span>
-                    <span className="text-white font-bold">até 27%</span>
-                  </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-zinc-800/50">
-                    <div className="h-full w-[85%] rounded-full bg-gradient-to-r from-primary to-secondary" />
-                  </div>
-                </div>
-
-                <div className="h-px w-full bg-white/10 mb-5" />
-
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <StatItem value="0%" label="Comissão" />
-                  <StatItem value="100%" label="Sua Marca" />
-                  <StatItem value="∞" label="Clientes" />
-                </div>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-medium tracking-wide text-zinc-300">
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gain opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-gain"></span>
-                    </span>
-                    PRONTO PARA LANÇAR
-                  </div>
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-medium tracking-wide text-zinc-300">
-                    <Star className="w-3 h-3 text-secondary fill-secondary" />
-                    EXCLUSIVO
+          {/* RIGHT COLUMN — Phone Mockup */}
+          <div className="lg:col-span-5 flex justify-center lg:mt-8">
+            <div className="hero-fade-in hero-delay-5 relative">
+              {/* Phone mockup */}
+              <div className="relative z-10 w-[240px] md:w-[280px] animate-float">
+                <div className="bg-foreground/90 rounded-[2.5rem] p-3 shadow-2xl shadow-primary/20 ring-1 ring-white/10">
+                  <div className="bg-gradient-to-br from-dark via-dark to-primary/5 rounded-[2rem] aspect-[9/19] flex flex-col overflow-hidden">
+                    {/* App header */}
+                    <div className="bg-primary/10 px-4 py-3 flex items-center gap-2.5 border-b border-white/5">
+                      <img src={avistaoLogo} alt="Avistão" className="w-7 h-7 rounded-full object-cover ring-1 ring-primary/20" />
+                      <span className="text-[11px] font-bold text-white tracking-wide">Avistão</span>
+                    </div>
+                    {/* Product list */}
+                    <div className="flex-1 p-3 space-y-2">
+                      {[1, 2, 3, 4].map((i) => (
+                        <div key={i} className="flex gap-2.5 bg-white/5 rounded-xl p-2.5 border border-white/5">
+                          <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-primary/15 to-secondary/10 shrink-0" />
+                          <div className="flex-1 space-y-1.5 py-0.5">
+                            <div className="h-2 w-3/4 bg-white/10 rounded-full" />
+                            <div className="h-2 w-1/2 bg-white/5 rounded-full" />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    {/* Cart button */}
+                    <div className="px-3 pb-3">
+                      <div className="bg-primary rounded-xl py-2.5 text-center text-[10px] font-bold text-primary-foreground shadow-sm">
+                        Ver Carrinho
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Features Marquee */}
-            <div className="hero-fade-in hero-delay-5 relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 py-6 backdrop-blur-xl">
-              <h3 className="mb-4 px-6 text-sm font-medium text-zinc-400">Tudo incluso na plataforma</h3>
-              <div
-                className="relative flex overflow-hidden"
-                style={{
-                  maskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
-                  WebkitMaskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
-                }}
-              >
-                <div className="hero-marquee flex gap-10 whitespace-nowrap px-4">
-                  {[...FEATURES, ...FEATURES, ...FEATURES, ...FEATURES].map((feat, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-2 opacity-60 transition-all hover:opacity-100 cursor-default"
-                    >
-                      <feat.icon className="h-5 w-5 text-primary" />
-                      <span className="text-sm font-bold text-white tracking-tight">{feat.name}</span>
+              {/* Laptop mockup behind */}
+              <div className="absolute -top-6 -right-14 w-[300px] opacity-40 hidden lg:block">
+                <div className="bg-foreground/80 rounded-xl p-2 shadow-xl ring-1 ring-white/5">
+                  <div className="bg-dark rounded-lg aspect-[16/10] p-3">
+                    <div className="flex gap-1 mb-2">
+                      <div className="w-2 h-2 rounded-full bg-loss/40" />
+                      <div className="w-2 h-2 rounded-full bg-secondary/40" />
+                      <div className="w-2 h-2 rounded-full bg-gain/40" />
                     </div>
-                  ))}
+                    <div className="flex gap-2 h-full">
+                      <div className="w-1/4 space-y-1.5">
+                        {[1, 2, 3, 4, 5].map((i) => (
+                          <div key={i} className="h-2 bg-primary/10 rounded-full" />
+                        ))}
+                      </div>
+                      <div className="flex-1 space-y-2">
+                        <div className="h-3 w-1/2 bg-white/10 rounded" />
+                        <div className="grid grid-cols-3 gap-1">
+                          {[1, 2, 3].map((i) => (
+                            <div key={i} className="aspect-square bg-primary/5 rounded" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating badges */}
+              <div className="absolute -left-8 top-1/4 hero-fade-in hero-delay-5 hidden lg:block">
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl px-3 py-1.5 text-[10px] font-medium text-zinc-300 shadow-lg">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gain opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-gain"></span>
+                  </span>
+                  0% comissão
+                </div>
+              </div>
+              <div className="absolute -right-6 bottom-1/3 hero-fade-in hero-delay-5 hidden lg:block">
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl px-3 py-1.5 text-[10px] font-medium text-zinc-300 shadow-lg">
+                  <Star className="w-3 h-3 text-secondary fill-secondary" />
+                  Exclusivo
                 </div>
               </div>
             </div>
