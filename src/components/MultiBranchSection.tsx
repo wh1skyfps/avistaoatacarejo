@@ -105,7 +105,7 @@ const MultiBranchSection = () => {
 
         {/* Branches */}
         <AnimateOnScroll delay={200}>
-          <div className="container-narrow text-center space-y-4 mb-8 md:mb-12">
+          <div className="container-narrow text-center space-y-5 mb-10 md:mb-14">
             <h3 className="heading-lg text-foreground">
               Estrutura pensada para a{" "}
               <span className="text-gradient">realidade do Avistão</span>
