@@ -35,7 +35,7 @@ const TaxComparisonSection = () => {
     <section className="section-spacing section-dark">
       <div className="container">
         <AnimateOnScroll>
-          <div className="container-narrow text-center space-y-5 mb-14 md:mb-20">
+          <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 text-loss font-display font-bold text-xs tracking-widest uppercase">
               <AlertTriangle size={14} />
               Atenção
