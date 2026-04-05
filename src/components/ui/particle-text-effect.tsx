@@ -180,9 +180,9 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     const pixels = imageData.data
 
     const newColor = {
-      r: 185 + Math.random() * 70,
-      g: 28 + Math.random() * 40,
-      b: 28 + Math.random() * 40,
+      r: 10 + Math.random() * 30,
+      g: 10 + Math.random() * 20,
+      b: 10 + Math.random() * 20,
     }
 
     const particles = particlesRef.current
