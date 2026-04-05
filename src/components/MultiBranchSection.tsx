@@ -1,6 +1,5 @@
 import { MapPin, Building2, Users, Package, Truck, BarChart3, Settings, Globe } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import { FloatingPaths } from "./ui/background-paths";
 
 const branches = [
   { name: "Avistão Atacarejo", emoji: "🏪" },
