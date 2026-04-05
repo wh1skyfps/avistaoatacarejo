@@ -34,7 +34,7 @@ const HeroSection = ({ introComplete = false }: { introComplete?: boolean }) => 
           <div className="flex-1 max-w-lg text-center lg:text-left lg:max-w-xl">
             <span className="inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-dark-foreground/40">
               <img src={avistaoLogo} alt="Avistão" className="w-5 h-5 rounded-full object-cover ring-1 ring-white/10" />
-              <TextEffect per="char" preset="blur" delay={0.3} trigger={introComplete}>
+              <TextEffect per="char" preset="fade" delay={0.3} trigger={introComplete}>
                 Proposta exclusiva · Avistão Supermercados
               </TextEffect>
             </span>
