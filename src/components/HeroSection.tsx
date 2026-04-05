@@ -14,6 +14,8 @@ const fadeUp = (delay: number) => ({
 });
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section className="relative w-full overflow-hidden">
       {/* Video Background */}
@@ -24,7 +26,7 @@ const HeroSection = () => {
           muted
           playsInline
           className="size-full object-cover opacity-30 dark:opacity-40"
-          src="/videos/hero-bg.mp4"
+          src={isMobile ? "/videos/hero-bg-mobile.mp4" : "/videos/hero-bg.mp4"}
         />
       </div>
 
