@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import heroPhoneMockup from "@/assets/hero-phone-mockup.png";
 import heroLaptopMockup from "@/assets/hero-laptop-mockup.png";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const ease = [0.22, 1, 0.36, 1] as unknown as [number, number, number, number];
 
@@ -13,6 +14,8 @@ const fadeUp = (delay: number) => ({
 });
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section className="relative w-full overflow-hidden">
       {/* Video Background */}
@@ -23,7 +26,7 @@ const HeroSection = () => {
           muted
           playsInline
           className="size-full object-cover opacity-30 dark:opacity-40"
-          src="/videos/hero-bg.mp4"
+          src={isMobile ? "/videos/hero-bg-mobile.mp4" : "/videos/hero-bg.mp4"}
         />
       </div>
 
