@@ -134,7 +134,7 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={200}>
-          <p className="text-center text-base md:text-lg font-display font-bold text-primary mb-12 md:mb-16 px-4">
+          <p className="text-center text-base md:text-lg font-display font-bold text-primary mb-14 md:mb-20 px-4">
             Em poucos meses, esse valor pode ser <span className="underline decoration-primary/40 decoration-2 underline-offset-4">muito maior</span> do que o investimento em um app próprio.
           </p>
         </AnimateOnScroll>
