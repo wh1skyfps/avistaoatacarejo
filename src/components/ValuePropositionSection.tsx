@@ -11,7 +11,7 @@ const items = [
 
 const ValuePropositionSection = () => {
   return (
-    <section className="section-spacing bg-background relative overflow-hidden">
+    <section className="section-spacing section-dark relative overflow-hidden">
       <div className="container relative z-10">
         <AnimateOnScroll>
           <div className="container-narrow text-center space-y-6 mb-16 md:mb-24">
