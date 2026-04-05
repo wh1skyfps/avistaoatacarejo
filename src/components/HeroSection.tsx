@@ -62,27 +62,6 @@ const HeroSection = () => {
               Vendas, delivery, cartão fidelidade e gestão multilojas — sem comissões, sem intermediários, 100% com a marca Avistão.
             </motion.p>
 
-            <motion.div
-              {...fadeUp(0.6)}
-              className="mt-12 flex flex-col items-center sm:flex-row gap-3 lg:justify-start"
-            >
-              <a
-                href="#solucao"
-                className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground font-display transition-all duration-300 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
-              >
-                Ver como funciona
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-              <a
-                href="https://wa.me/5587991516025?text=Ol%C3%A1%2C%20vi%20a%20proposta%20do%20app%20de%20delivery%20do%20Avist%C3%A3o%20e%20quero%20entender%20melhor%20como%20funcionaria."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-semibold text-dark-foreground/60 font-display backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:text-dark-foreground/90 hover:border-white/20 active:scale-[0.97]"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Falar pelo WhatsApp
-              </a>
-            </motion.div>
           </div>
 
           {/* Mockups — right side */}
