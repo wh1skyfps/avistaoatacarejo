@@ -39,7 +39,7 @@ const SolutionSection = () => {
               Uma plataforma digital própria{" "}
               <span className="text-gradient">para o Avistão</span>
             </h2>
-            <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="body-lg text-dark-foreground/50 max-w-2xl mx-auto">
               Vendas, delivery, cartão próprio e gestão multilojas — tudo em uma 
               estrutura profissional feita para a rede crescer.
             </p>
