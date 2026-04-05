@@ -1,7 +1,9 @@
 import avistaoLogo from "@/assets/avistao-logo.jpg";
 import mowinLogo from "@/assets/mowin-logo.jpg";
+import { MessageCircle } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import { ParticleTextEffect } from "./ui/particle-text-effect";
+import { ShinyButton } from "./ui/shiny-button";
 
 const CTASection = () => {
   return (
@@ -29,6 +31,19 @@ const CTASection = () => {
             <p className="text-dark-foreground/40 text-sm md:text-base max-w-md">
               Obrigado por dedicar seu tempo a essa proposta. Estamos prontos para transformar o delivery do Avistão.
             </p>
+
+            <a
+              href="https://wa.me/5587991516025?text=Ol%C3%A1%2C%20vi%20a%20proposta%20do%20app%20de%20delivery%20do%20Avist%C3%A3o%20e%20quero%20entender%20melhor%20como%20funcionaria."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ShinyButton className="px-10 py-5 text-lg rounded-2xl">
+                <span className="flex items-center gap-3 text-white text-base md:text-lg font-bold">
+                  <MessageCircle size={20} />
+                  Falar no WhatsApp
+                </span>
+              </ShinyButton>
+            </a>
           </div>
         </AnimateOnScroll>
       </div>
