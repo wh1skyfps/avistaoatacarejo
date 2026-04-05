@@ -14,7 +14,6 @@ import MultiBranchSection from "@/components/MultiBranchSection";
 import ValuePropositionSection from "@/components/ValuePropositionSection";
 import BusinessBenefitsSection from "@/components/BusinessBenefitsSection";
 import AppScreensSection from "@/components/AppScreensSection";
-import MockupsSection from "@/components/MockupsSection";
 import SimulatorSection from "@/components/SimulatorSection";
 import CTASection from "@/components/CTASection";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -42,38 +41,49 @@ const Index = () => {
       >
         🚀 Proposta exclusiva para o Avistão Supermercados — Válida por tempo limitado!
       </Banner>
+      {/* Hero (dark) */}
       <HeroSection />
+      {/* 1. Pain (light) */}
       <div className="section-divider" />
       <PainSection />
-      <div className="section-divider" />
-      <TaxComparisonSection />
+      {/* 2. TaxComparison (dark) */}
       <div className="section-divider-dark section-divider" />
-      <UrgencySection />
+      <TaxComparisonSection />
+      {/* 3. Urgency (light) */}
       <div className="section-divider" />
+      <UrgencySection />
+      {/* 4. Solution (dark) */}
+      <div className="section-divider-dark section-divider" />
       <SolutionSection />
+      {/* 5. Storyboard (light) */}
       <div className="section-divider" />
       <StoryboardSection />
+      {/* 6. AvistaoCard (dark) */}
       <div className="section-divider-dark section-divider" />
       <AvistaoCardSection />
-      <div className="section-divider-dark section-divider" />
-      <MultiBranchSection />
+      {/* 7. MultiBranch (light) */}
       <div className="section-divider" />
+      <MultiBranchSection />
+      {/* 8. ValueProp (dark) */}
+      <div className="section-divider-dark section-divider" />
       <ValuePropositionSection />
+      {/* 9. BusinessBenefits (light) */}
       <div className="section-divider" />
       <BusinessBenefitsSection />
-      <div className="section-divider" />
+      {/* 10. AppScreens (dark) */}
+      <div className="section-divider-dark section-divider" />
       <AppScreensSection />
-      <div className="section-divider-dark section-divider" />
-      <MockupsSection />
-      <div className="section-divider-dark section-divider" />
-      <SimulatorSection />
+      {/* 11. Simulator (light) */}
       <div className="section-divider" />
+      <SimulatorSection />
+      {/* 12. CTA (dark) - final */}
+      <div className="section-divider-dark section-divider" />
       <CTASection />
       <WhatsAppFloat />
-      <footer className="py-8 md:py-10 text-center bg-card border-t">
+      <footer className="py-8 md:py-10 text-center bg-[hsl(var(--dark))] text-[hsl(var(--dark-foreground))] border-t border-white/5">
         <div className="container">
           <img src={avistaoLogo} alt="Avistão Supermercados" className="w-10 h-10 rounded-full object-cover mx-auto mb-3 opacity-60" />
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-white/40">
             © 2026 Mowin — Proposta exclusiva para Avistão Supermercados
           </p>
         </div>
