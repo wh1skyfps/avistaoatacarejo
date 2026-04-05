@@ -25,7 +25,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="size-full object-cover opacity-30 dark:opacity-40"
+          className="size-full object-cover opacity-20"
           src={isMobile ? "/videos/hero-bg-mobile.mp4" : "/videos/hero-bg.mp4"}
         />
       </div>
