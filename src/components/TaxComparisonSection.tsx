@@ -1,4 +1,5 @@
 import { X, Check, TrendingDown, AlertTriangle, Percent } from "lucide-react";
+import { motion } from "framer-motion";
 import AnimateOnScroll from "./AnimateOnScroll";
 import dinheiroImg from "@/assets/dinheiro.png";
 
@@ -71,11 +72,21 @@ const TaxComparisonSection = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={80}>
-          <div className="container-narrow mb-12 md:mb-16 bg-white/[0.03] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-10 overflow-hidden">
+          <div className="container-narrow mb-12 md:mb-16 p-6 md:p-10 overflow-hidden">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-              <div className="w-full md:w-1/2 shrink-0">
-                <img src={dinheiroImg} alt="Dinheiro perdido em comissões" className="w-full max-w-xs mx-auto md:max-w-none rounded-xl md:rounded-2xl shadow-2xl shadow-loss/20" />
-              </div>
+              <motion.div
+                className="w-full md:w-1/2 shrink-0"
+                animate={{ y: [0, -8, 0], scale: [1, 1.02, 1] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <motion.img
+                  src={dinheiroImg}
+                  alt="Dinheiro perdido em comissões"
+                  className="w-full max-w-xs mx-auto md:max-w-none drop-shadow-2xl"
+                  whileHover={{ scale: 1.05, rotate: -2 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                />
+              </motion.div>
               <div className="space-y-4 text-center md:text-left">
                 <h3 className="text-xl md:text-2xl font-display font-black leading-tight">
                   Esse dinheiro poderia estar{" "}
