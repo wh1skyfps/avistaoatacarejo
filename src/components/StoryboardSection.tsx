@@ -81,7 +81,7 @@ const StoryboardSection = () => {
                         <span className="text-primary-foreground font-display font-black text-sm md:text-base">{step.num}</span>
                       </div>
                       {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                     </div>
                   </div>
 
