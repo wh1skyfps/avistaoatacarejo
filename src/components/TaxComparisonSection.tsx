@@ -61,7 +61,7 @@ const TaxComparisonSection = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {taxBreakdown.map((item, i) => (
-                <div key={item.label} className="bg-white/[0.03] border border-loss/10 rounded-2xl p-5 md:p-6 space-y-2 hover:border-loss/25 transition-all duration-300">
+                <div key={item.label} className="card-dark p-5 md:p-6 space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="font-display font-bold text-sm text-dark-foreground/80">{item.label}</span>
                     <span className="text-loss font-display font-black text-sm bg-loss/10 px-2.5 py-1 rounded-lg">{item.value}</span>
