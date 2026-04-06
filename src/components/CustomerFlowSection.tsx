@@ -26,7 +26,7 @@ const CustomerFlowSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 container-wide">
           {steps.map((s, i) => (
             <AnimateOnScroll key={s.step} delay={i * 100}>
-              <div className="bg-white/[0.04] border border-white/8 rounded-2xl md:rounded-3xl p-6 md:p-7 text-center space-y-4 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 h-full">
+              <div className="card-dark p-6 md:p-7 text-center space-y-4 hover:-translate-y-1 h-full">
                 <span className="inline-block text-[11px] font-display font-bold text-primary tracking-[0.2em] uppercase bg-primary/8 rounded-full px-3 py-1">
                   Passo {s.step}
                 </span>

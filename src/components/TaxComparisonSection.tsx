@@ -164,7 +164,7 @@ const TaxComparisonSection = () => {
             </div>
 
             {/* Own app */}
-            <div className="bg-primary/[0.06] border border-primary/20 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5 shadow-lg shadow-primary/5">
+            <div className="card-dark p-6 md:p-8 space-y-5 shadow-lg shadow-primary/5">
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-2xl bg-primary/15 flex items-center justify-center">
                   <Check size={20} className="text-primary" />
