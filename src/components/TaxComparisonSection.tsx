@@ -61,7 +61,7 @@ const TaxComparisonSection = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {taxBreakdown.map((item, i) => (
-                <div key={item.label} className="bg-white/[0.03] border border-loss/10 rounded-2xl p-5 md:p-6 space-y-2 hover:border-loss/25 transition-all duration-300">
+                <div key={item.label} className="card-dark p-5 md:p-6 space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="font-display font-bold text-sm text-dark-foreground/80">{item.label}</span>
                     <span className="text-loss font-display font-black text-sm bg-loss/10 px-2.5 py-1 rounded-lg">{item.value}</span>
@@ -111,10 +111,8 @@ const TaxComparisonSection = () => {
             {scenarios.map((s) => (
               <div
                 key={s.revenue}
-                className={`rounded-2xl md:rounded-3xl p-6 md:p-7 text-center space-y-3 border transition-all duration-500 hover:-translate-y-1 ${
-                  s.featured
-                    ? "bg-primary/8 border-primary/25 shadow-lg shadow-primary/5 scale-[1.02]"
-                    : "bg-white/[0.04] border-white/10 hover:border-primary/20"
+                className={`card-dark p-6 md:p-7 text-center space-y-3 hover:-translate-y-1 ${
+                  s.featured ? "md:scale-[1.02]" : ""
                 }`}
               >
                 <p className="text-xs text-dark-foreground/40 font-medium uppercase tracking-wider">Faturamento</p>
@@ -145,7 +143,7 @@ const TaxComparisonSection = () => {
         <AnimateOnScroll delay={300}>
           <div className="grid md:grid-cols-2 gap-5 md:gap-8 container-narrow">
             {/* Third party */}
-            <div className="bg-white/[0.03] border border-loss/15 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5">
+            <div className="card-dark p-6 md:p-8 space-y-5">
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-2xl bg-loss/15 flex items-center justify-center">
                   <X size={20} className="text-loss" />
@@ -166,7 +164,7 @@ const TaxComparisonSection = () => {
             </div>
 
             {/* Own app */}
-            <div className="bg-primary/[0.06] border border-primary/20 rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-5 shadow-lg shadow-primary/5">
+            <div className="card-dark p-6 md:p-8 space-y-5 shadow-lg shadow-primary/5">
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-2xl bg-primary/15 flex items-center justify-center">
                   <Check size={20} className="text-primary" />

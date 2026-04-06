@@ -49,7 +49,7 @@ const SolutionSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-4xl mx-auto">
           {blocks.map((b, i) => (
             <AnimateOnScroll key={b.title} delay={i * 100}>
-              <div className="bg-white/[0.04] border border-white/10 rounded-2xl md:rounded-3xl p-7 md:p-9 space-y-6 hover:border-primary/25 hover:-translate-y-1 transition-all duration-500 h-full">
+              <div className="card-dark p-7 md:p-9 space-y-6 hover:border-primary/25 hover:-translate-y-1 h-full">
                 <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary">
                   <b.icon size={26} strokeWidth={1.5} />
                 </div>

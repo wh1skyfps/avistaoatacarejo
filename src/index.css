@@ -83,6 +83,36 @@
   }
 }
 
+/* Animated gradient border */
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes gradient-rotate {
+  from { --gradient-angle: 0deg; }
+  to { --gradient-angle: 360deg; }
+}
+
+.gradient-border-auto {
+  animation: gradient-rotate var(--animation-duration, 5s) linear infinite;
+}
+
+.gradient-border-hover {
+  --gradient-angle: 0deg;
+}
+.gradient-border-hover:hover {
+  animation: gradient-rotate var(--animation-duration, 5s) linear infinite;
+}
+
+.gradient-border-stop-hover {
+  animation: gradient-rotate var(--animation-duration, 5s) linear infinite;
+}
+.gradient-border-stop-hover:hover {
+  animation-play-state: paused;
+}
+
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
@@ -99,13 +129,40 @@
   }
 
   .card-premium {
-    @apply bg-card border rounded-2xl md:rounded-3xl shadow-sm transition-all duration-500;
+    @apply rounded-2xl md:rounded-3xl shadow-sm transition-all duration-500;
     will-change: transform, box-shadow;
+    border: 2px solid transparent;
+    background:
+      linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+      conic-gradient(
+        from var(--gradient-angle, 0deg),
+        #584827 0%, #c7a03c 37%, #f9de90 30%, #c7a03c 33%, #584827 40%,
+        #584827 50%, #c7a03c 77%, #f9de90 80%, #c7a03c 83%, #584827 90%
+      ) border-box;
+    animation: gradient-rotate 5s linear infinite;
   }
 
   .card-premium:hover {
     @apply shadow-xl -translate-y-1;
-    box-shadow: 0 20px 40px -12px hsl(0 0% 0% / 0.08), 0 0 0 1px hsl(var(--primary) / 0.06);
+    box-shadow: 0 20px 40px -12px hsl(0 0% 0% / 0.08);
+  }
+
+  .card-dark {
+    @apply rounded-2xl md:rounded-3xl transition-all duration-500;
+    will-change: transform, box-shadow;
+    border: 2px solid transparent;
+    background:
+      linear-gradient(hsl(var(--dark)), hsl(var(--dark))) padding-box,
+      conic-gradient(
+        from var(--gradient-angle, 0deg),
+        #584827 0%, #c7a03c 37%, #f9de90 30%, #c7a03c 33%, #584827 40%,
+        #584827 50%, #c7a03c 77%, #f9de90 80%, #c7a03c 83%, #584827 90%
+      ) border-box;
+    animation: gradient-rotate 5s linear infinite;
+  }
+
+  .card-dark:hover {
+    @apply shadow-xl -translate-y-1;
   }
 
   .section-spacing {
