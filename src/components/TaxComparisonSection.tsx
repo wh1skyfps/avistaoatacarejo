@@ -111,10 +111,8 @@ const TaxComparisonSection = () => {
             {scenarios.map((s) => (
               <div
                 key={s.revenue}
-                className={`rounded-2xl md:rounded-3xl p-6 md:p-7 text-center space-y-3 border transition-all duration-500 hover:-translate-y-1 ${
-                  s.featured
-                    ? "bg-primary/8 border-primary/25 shadow-lg shadow-primary/5 scale-[1.02]"
-                    : "bg-white/[0.04] border-white/10 hover:border-primary/20"
+                className={`card-dark p-6 md:p-7 text-center space-y-3 hover:-translate-y-1 ${
+                  s.featured ? "md:scale-[1.02]" : ""
                 }`}
               >
                 <p className="text-xs text-dark-foreground/40 font-medium uppercase tracking-wider">Faturamento</p>
